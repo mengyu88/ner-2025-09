@@ -1,0 +1,16 @@
+# Generated files and training artefacts
+**/__pycache__/
+**/*.py[cod]
+**/cache/
+**/caches/
+**/_saved_models/
+**/pretrained_models/
+
+# Model weights and checkpoints.  Metrics, predictions, logs, and figures are
+# intentionally retained because they are inputs to the paper visualisations.
+**/*.pt
+**/*.bin
+**/*.pkl
+**/*.tar
+**/*.ckpt
+**/*.safetensors

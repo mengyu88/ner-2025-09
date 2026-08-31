@@ -1,0 +1,13 @@
+[
+  {
+    "tokens": ["食品", "检验"],
+    "pos": ["NN", "NN"],
+    "entities": [
+      {"type": "FC", "start": 0, "end": 1}
+    ],
+    "relations": [],
+    "ltokens": [],
+    "rtokens": [],
+    "org_id": "smoke_dev_1"
+  }
+]

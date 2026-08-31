@@ -1,0 +1,2 @@
+epoch,step,train_loss,dev_entity_f1,dev_entity_precision,dev_entity_recall,test_entity_f1,test_entity_precision,test_entity_recall,dev_flat_f1,dev_flat_precision,dev_flat_recall,test_flat_f1,test_flat_precision,test_flat_recall,lr,remark
+1,8,81.164156,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00100000,best

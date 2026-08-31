@@ -1,0 +1,86 @@
+{
+  "input": "/root/shared-nvme/projects/LEBERT/outputs/food/WCBertCRF_Token-Test-1880.txt",
+  "rows": [
+    {
+      "entity_type": "FC",
+      "precision": 99.49,
+      "recall": 99.49,
+      "f1": 99.49,
+      "tp": 195,
+      "predicted": 196,
+      "gold": 196
+    },
+    {
+      "entity_type": "FN",
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 36,
+      "predicted": 36,
+      "gold": 36
+    },
+    {
+      "entity_type": "IN",
+      "precision": 99.33,
+      "recall": 95.48,
+      "f1": 97.37,
+      "tp": 148,
+      "predicted": 149,
+      "gold": 155
+    },
+    {
+      "entity_type": "IV",
+      "precision": 100.0,
+      "recall": 97.35,
+      "f1": 98.66,
+      "tp": 147,
+      "predicted": 147,
+      "gold": 151
+    },
+    {
+      "entity_type": "ORG",
+      "precision": 86.11,
+      "recall": 88.57,
+      "f1": 87.32,
+      "tp": 31,
+      "predicted": 36,
+      "gold": 35
+    },
+    {
+      "entity_type": "PER",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "predicted": 0,
+      "gold": 1
+    },
+    {
+      "entity_type": "SN",
+      "precision": 30.77,
+      "recall": 66.67,
+      "f1": 42.11,
+      "tp": 4,
+      "predicted": 13,
+      "gold": 6
+    },
+    {
+      "entity_type": "SNum",
+      "precision": 97.51,
+      "recall": 98.33,
+      "f1": 97.92,
+      "tp": 235,
+      "predicted": 241,
+      "gold": 239
+    },
+    {
+      "entity_type": "Overall",
+      "precision": 97.31,
+      "recall": 97.19,
+      "f1": 97.25,
+      "tp": 796,
+      "predicted": 818,
+      "gold": 819
+    }
+  ]
+}

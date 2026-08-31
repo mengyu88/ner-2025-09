@@ -1,0 +1,111 @@
+2026-08-16 17:24:37,289 [MainThread  ] [INFO ]  {
+    "beta_schedule": "cosine",
+    "boundary_threshold": 0.0,
+    "cache_path": null,
+    "cls_threshold": 0.0,
+    "config": "configs/food_per_class_eval.conf",
+    "cpu": false,
+    "dataset_path": "/root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json",
+    "debug": false,
+    "device_id": 0,
+    "entity_threshold": 2.5,
+    "eval_batch_size": 32,
+    "example_count": null,
+    "extand_noise_spans": "concat",
+    "label": "food_per_class_eval",
+    "local_rank": -1,
+    "log_path": "/root/shared-nvme/projects/DiffusionNER/outputs/food/per_class_eval_logs",
+    "lowercase": false,
+    "lstm_layers": 2,
+    "model_path": "/root/shared-nvme/projects/DiffusionNER/outputs/food/checkpoints/food_train/2026-07-03_22:39:06.171418/best_model",
+    "model_type": "diffusionner",
+    "no_duplicate": false,
+    "no_overlapping": false,
+    "no_partial_overlapping": true,
+    "num_proposals": 60,
+    "pool_type": "max",
+    "pos_type": "sine",
+    "prop_drop": 0.1,
+    "repeat_gt_entities": -1,
+    "sample_dist_type": "normal",
+    "sampling_processes": 4,
+    "sampling_timesteps": 5,
+    "save_code": false,
+    "scale": 1.0,
+    "seed": 488,
+    "soi_pooling": "lrconcat",
+    "span_attn_layers": 2,
+    "span_renewal": false,
+    "split_epoch": 10,
+    "stage_one_lr_scale": 1.0,
+    "step_embed_type": "add",
+    "step_ensemble": false,
+    "store_examples": false,
+    "store_predictions": true,
+    "timesteps": 1000,
+    "tokenizer_path": "/root/.cache/modelscope/hub/AI-ModelScope/bert-base-chinese",
+    "types_path": "/root/shared-nvme/projects/DiffusionNER/data/datasets/food/food_types.json",
+    "wo_cross_attn": false,
+    "wo_self_attn": false,
+    "world_size": -1
+}
+2026-08-16 17:24:37,290 [MainThread  ] [INFO ]  Dataset: /root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json
+2026-08-16 17:24:37,290 [MainThread  ] [INFO ]  Model: diffusionner
+2026-08-16 17:24:38,817 [MainThread  ] [INFO ]  Entity type count: 9
+2026-08-16 17:24:38,817 [MainThread  ] [INFO ]  Entities:
+2026-08-16 17:24:38,817 [MainThread  ] [INFO ]  No Entity=0
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  IN=1
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  IV=2
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  FN=3
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  FC=4
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  SNum=5
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  SN=6
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  ORG=7
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  PER=8
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Dataset: test
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Document count: 511
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Entity count: 822
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Context size: 161
+2026-08-16 17:24:39,845 [MainThread  ] [INFO ]  Freeze bert weights from begining
+2026-08-16 17:24:39,845 [MainThread  ] [INFO ]  Freeze transformer weights
+2026-08-16 17:24:40,497 [MainThread  ] [INFO ]  Evaluate: test
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  Evaluation
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  --- NER ---
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                  type    precision       recall     f1-score      support
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                   PER         0.00         0.00         0.00            1
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                   ORG        69.77        85.71        76.92           35
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                    IN        99.33        94.87        97.05          156
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                    SN       100.00        16.67        28.57            6
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                    IV       100.00        96.69        98.32          151
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                  SNum        95.79        85.77        90.51          239
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                    FC        93.07        95.43        94.24          197
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                    FN       100.00         2.70         5.26           37
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                 micro        95.11        87.47        91.13          822
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]                 macro        82.25        59.73        61.36          822
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]  --- NER on Localization ---
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,234 [MainThread  ] [INFO ]                  type    precision       recall     f1-score      support
+2026-08-16 17:25:16,234 [MainThread  ] [INFO ]                Entity        97.47        89.17        93.14          822
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]                 micro        97.47        89.17        93.14          822
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]                 macro        97.47        89.17        93.14          822
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]  --- NER on Classification ---
+2026-08-16 17:25:16,236 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,250 [MainThread  ] [INFO ]                  type    precision       recall     f1-score      support
+2026-08-16 17:25:16,250 [MainThread  ] [INFO ]                   PER         0.00         0.00         0.00            1
+2026-08-16 17:25:16,250 [MainThread  ] [INFO ]                   ORG        83.33        85.71        84.51           35
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    IN       100.00        94.87        97.37          156
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    SN       100.00        16.67        28.57            6
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    IV       100.00        96.69        98.32          151
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                  SNum        99.51        85.77        92.13          239
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    FC        94.47        95.43        94.95          197
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    FN       100.00         2.70         5.26           37
+2026-08-16 17:25:16,252 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,252 [MainThread  ] [INFO ]                 micro        97.56        87.47        92.24          822
+2026-08-16 17:25:16,252 [MainThread  ] [INFO ]                 macro        84.67        59.73        62.64          822
+2026-08-16 17:25:17,846 [MainThread  ] [INFO ]  Logged in: /root/shared-nvme/projects/DiffusionNER/outputs/food/per_class_eval_logs/food_per_class_eval/2026-08-16_17:24:37.175399

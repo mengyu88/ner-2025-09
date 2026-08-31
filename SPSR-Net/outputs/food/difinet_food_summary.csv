@@ -1,0 +1,3 @@
+run,best_by,epoch,step,dev_entity_f1,dev_entity_precision,dev_entity_recall,test_entity_f1,test_entity_precision,test_entity_recall
+food_genia_opt_initial_b4_20260703_000747,best_dev,14,42014,98.27,98.57,97.98,97.86,98.52,97.2
+food_genia_opt_initial_b4_20260703_000747,best_test,15,45015,97.98,98.21,97.74,97.98,98.64,97.32

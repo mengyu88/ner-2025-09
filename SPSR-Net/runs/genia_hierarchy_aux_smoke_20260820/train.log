@@ -1,0 +1,33 @@
+[00:13:11] INFO     Read cache from /root/shared-nvme/proje cache_results.py:320
+                    cts/SPSR-Net/caches/963803bb_ner_caches                     
+                    .pkl (Saved on 2026-08-19                                   
+                    13:52:07.573263).                                           
+[00:13:12] INFO     In total 3 datasets:                            train.py:234
+                            dev has 1669 instances.                             
+                            test has 1854 instances.                            
+                            train has 15023 instances.                          
+                                                                                
+           INFO     5 labels: {'CELL_LINE': 0, 'CELL_TYPE': 1,      train.py:236
+                    'DNA': 2, 'PROTEIN': 3, 'RNA': 4},                          
+                    matrix_segs:{'ent': 5}                                      
+Some weights of the model checkpoint at /root/shared-nvme/projects/SPSR-Net/pretrained_models/biomedbert-base-uncased-abstract-fulltext were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[00:13:13] INFO     Counter({'pretrain_model': 109482240, 'cnn1':   train.py:366
+                    11371144, 'biaffine': 1000000, 'W': 170800,                 
+                    'head_mlp': 153800, 'tail_mlp': 153800,                     
+                    'hierarchy_role_head': 81402, 'score_head':                 
+                    6005, 'size_embedding': 750})                               
+           INFO     Total param  122419941                          train.py:367
+           INFO     The checkpoint will be saved in this folder topk_saver.py:54
+                    for this time:                                              
+                    _saved_models/2026-08-20-00_13_08_813191.                   
+           INFO     Running evaluator sanity check for 1 batches. trainer.py:661
+[00:14:03] INFO     The best performance for monitor     progress_callback.py:37
+                    f#f#dev:2.86 was achieved in                                
+                    Epoch:1, Global Batch:1. The                                
+                    evaluation result:                                          
+                    {'f#f#dev': 2.86, 'rec#f#dev':                              
+                    40.21, 'pre#f#dev': 1.49,                                   
+                    'f#f#test': 3.2, 'rec#f#test': 41.9,                        
+                    'pre#f#test': 1.66}                                         

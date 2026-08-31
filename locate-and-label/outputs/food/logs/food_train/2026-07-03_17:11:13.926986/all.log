@@ -1,0 +1,83 @@
+2026-07-03 17:11:13,994 [MainThread  ] [INFO ]  Datasets: data/datasets/food/train_context.json, data/datasets/food/dev_context.json
+2026-07-03 17:11:13,995 [MainThread  ] [INFO ]  Model type: identifier
+2026-07-03 17:11:51,043 [MainThread  ] [INFO ]  Relation type count: 1
+2026-07-03 17:11:51,044 [MainThread  ] [INFO ]  Entity type count: 9
+2026-07-03 17:11:51,045 [MainThread  ] [INFO ]  Entities:
+2026-07-03 17:11:51,046 [MainThread  ] [INFO ]  No Entity=0
+2026-07-03 17:11:51,047 [MainThread  ] [INFO ]  IN=1
+2026-07-03 17:11:51,047 [MainThread  ] [INFO ]  IV=2
+2026-07-03 17:11:51,047 [MainThread  ] [INFO ]  FN=3
+2026-07-03 17:11:51,047 [MainThread  ] [INFO ]  FC=4
+2026-07-03 17:11:51,047 [MainThread  ] [INFO ]  SNum=5
+2026-07-03 17:11:51,048 [MainThread  ] [INFO ]  SN=6
+2026-07-03 17:11:51,048 [MainThread  ] [INFO ]  ORG=7
+2026-07-03 17:11:51,048 [MainThread  ] [INFO ]  PER=8
+2026-07-03 17:11:51,048 [MainThread  ] [INFO ]  Relations:
+2026-07-03 17:11:51,048 [MainThread  ] [INFO ]  No Relation=0
+2026-07-03 17:11:51,048 [MainThread  ] [INFO ]  Dataset: train
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Document count: 12003
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Relation count: 0
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Entity count: 20661
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Dataset: valid
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Document count: 553
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Relation count: 0
+2026-07-03 17:11:51,049 [MainThread  ] [INFO ]  Entity count: 842
+2026-07-03 17:11:51,050 [MainThread  ] [INFO ]  Dataset: test
+2026-07-03 17:11:51,050 [MainThread  ] [INFO ]  Document count: 511
+2026-07-03 17:11:51,050 [MainThread  ] [INFO ]  Relation count: 0
+2026-07-03 17:11:51,050 [MainThread  ] [INFO ]  Entity count: 822
+2026-07-03 17:11:51,050 [MainThread  ] [INFO ]  Context size: 162
+2026-07-03 17:11:51,051 [MainThread  ] [INFO ]  Updates per epoch: 1500
+2026-07-03 17:11:51,051 [MainThread  ] [INFO ]  Updates total: 45000
+2026-07-03 17:11:52,780 [MainThread  ] [INFO ]  Train epoch: 0
+2026-07-03 17:18:48,783 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 17:19:39,338 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 17:20:27,588 [MainThread  ] [INFO ]  Train epoch: 1
+2026-07-03 17:27:17,873 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 17:28:07,036 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 17:28:54,120 [MainThread  ] [INFO ]  Train epoch: 2
+2026-07-03 17:35:34,941 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 17:36:24,314 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 17:37:10,092 [MainThread  ] [INFO ]  Train epoch: 3
+2026-07-03 17:43:46,202 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 17:44:33,925 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 17:45:21,705 [MainThread  ] [INFO ]  Train epoch: 4
+2026-07-03 17:51:57,327 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 17:52:46,933 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 17:53:32,326 [MainThread  ] [INFO ]  Train epoch: 5
+2026-07-03 18:00:08,594 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:00:56,405 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:01:43,125 [MainThread  ] [INFO ]  Train epoch: 6
+2026-07-03 18:08:17,134 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:09:05,862 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:09:51,507 [MainThread  ] [INFO ]  Train epoch: 7
+2026-07-03 18:16:22,837 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:17:09,760 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:17:54,880 [MainThread  ] [INFO ]  Train epoch: 8
+2026-07-03 18:24:30,165 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:25:18,490 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:26:03,207 [MainThread  ] [INFO ]  Train epoch: 9
+2026-07-03 18:32:31,014 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:33:18,446 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:34:04,085 [MainThread  ] [INFO ]  Train epoch: 10
+2026-07-03 18:40:35,811 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:41:25,293 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:42:10,352 [MainThread  ] [INFO ]  Train epoch: 11
+2026-07-03 18:48:41,348 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:49:28,824 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:50:14,146 [MainThread  ] [INFO ]  Train epoch: 12
+2026-07-03 18:56:44,497 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 18:57:32,021 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 18:58:18,637 [MainThread  ] [INFO ]  Train epoch: 13
+2026-07-03 19:04:51,197 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 19:05:38,410 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 19:06:23,397 [MainThread  ] [INFO ]  Train epoch: 14
+2026-07-03 19:12:54,351 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 19:13:41,900 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 19:14:28,519 [MainThread  ] [INFO ]  Train epoch: 15
+2026-07-03 19:20:55,562 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 19:21:44,687 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 19:22:29,272 [MainThread  ] [INFO ]  Train epoch: 16
+2026-07-03 19:28:56,560 [MainThread  ] [INFO ]  Evaluate: valid
+2026-07-03 19:29:43,969 [MainThread  ] [INFO ]  Evaluate: test
+2026-07-03 19:30:30,675 [MainThread  ] [INFO ]  Train epoch: 17

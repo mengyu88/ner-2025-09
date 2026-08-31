@@ -1,0 +1,95 @@
+/root/.conda/envs/difinet/lib/python3.10/site-packages/fastNLP/envs/utils.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import DistributionNotFound
+dev:   0%|          | 0/553 [00:00<?, ?it/s]dev:  45%|████▌     | 249/553 [00:00<00:00, 2489.81it/s]                                                        test:   0%|          | 0/511 [00:00<?, ?it/s]                                             train:   0%|          | 0/12003 [00:00<?, ?it/s]train:   3%|▎         | 409/12003 [00:00<00:02, 4082.60it/s]train:   7%|▋         | 818/12003 [00:00<00:02, 3914.04it/s]train:  10%|█         | 1221/12003 [00:00<00:02, 3965.01it/s]train:  14%|█▍        | 1710/12003 [00:00<00:02, 4321.94it/s]train:  18%|█▊        | 2161/12003 [00:00<00:02, 4387.64it/s]train:  22%|██▏       | 2604/12003 [00:00<00:02, 4401.01it/s]train:  25%|██▌       | 3048/12003 [00:00<00:02, 4410.29it/s]train:  29%|██▉       | 3495/12003 [00:00<00:01, 4428.47it/s]train:  33%|███▎      | 3939/12003 [00:00<00:01, 4327.43it/s]train:  36%|███▋      | 4373/12003 [00:01<00:01, 4259.66it/s]train:  40%|███▉      | 4800/12003 [00:01<00:03, 2308.32it/s]train:  44%|████▎     | 5245/12003 [00:01<00:02, 2710.08it/s]train:  48%|████▊     | 5764/12003 [00:01<00:01, 3233.26it/s]train:  52%|█████▏    | 6185/12003 [00:01<00:01, 3458.74it/s]train:  56%|█████▌    | 6675/12003 [00:01<00:01, 3816.12it/s]train:  59%|█████▉    | 7129/12003 [00:01<00:01, 4005.59it/s]train:  63%|██████▎   | 7608/12003 [00:02<00:01, 4215.86it/s]train:  67%|██████▋   | 8061/12003 [00:02<00:00, 4176.42it/s]train:  71%|███████   | 8501/12003 [00:02<00:00, 4219.34it/s]train:  74%|███████▍  | 8939/12003 [00:02<00:00, 4243.32it/s]train:  78%|███████▊  | 9375/12003 [00:02<00:00, 4264.24it/s]train:  82%|████████▏ | 9810/12003 [00:02<00:00, 4277.68it/s]train:  85%|████████▌ | 10246/12003 [00:02<00:00, 4301.26it/s]train:  89%|████████▉ | 10689/12003 [00:02<00:00, 4337.49it/s]train:  93%|█████████▎| 11135/12003 [00:02<00:00, 4367.81it/s]train:  97%|█████████▋| 11586/12003 [00:02<00:00, 4409.04it/s]                                                              Some weights of the model checkpoint at /root/.cache/modelscope/hub/AI-ModelScope/bert-base-chinese were not used when initializing BertModel: ['cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/root/.conda/envs/difinet/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1712608935911/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+{
+  "checkpoint": "/root/shared-nvme/projects/SPSR-Net/_saved_models/2026-07-04-16_10_44_078110/model-epoch_11-batch_33011-f#f#test_97.74/fastnlp_model.pkl.tar",
+  "dataset": "food",
+  "threshold": 0.48,
+  "rows": [
+    {
+      "entity_type": "FC",
+      "precision": 100.0,
+      "recall": 94.92,
+      "f1": 97.4,
+      "tp": 187,
+      "predicted": 187,
+      "gold": 197
+    },
+    {
+      "entity_type": "FN",
+      "precision": 100.0,
+      "recall": 13.51,
+      "f1": 23.81,
+      "tp": 5,
+      "predicted": 5,
+      "gold": 37
+    },
+    {
+      "entity_type": "IN",
+      "precision": 99.33,
+      "recall": 95.51,
+      "f1": 97.39,
+      "tp": 149,
+      "predicted": 150,
+      "gold": 156
+    },
+    {
+      "entity_type": "IV",
+      "precision": 100.0,
+      "recall": 90.07,
+      "f1": 94.77,
+      "tp": 136,
+      "predicted": 136,
+      "gold": 151
+    },
+    {
+      "entity_type": "ORG",
+      "precision": 95.24,
+      "recall": 57.14,
+      "f1": 71.43,
+      "tp": 20,
+      "predicted": 21,
+      "gold": 35
+    },
+    {
+      "entity_type": "PER",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "predicted": 0,
+      "gold": 1
+    },
+    {
+      "entity_type": "SN",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "predicted": 0,
+      "gold": 6
+    },
+    {
+      "entity_type": "SNum",
+      "precision": 100.0,
+      "recall": 69.46,
+      "f1": 81.98,
+      "tp": 166,
+      "predicted": 166,
+      "gold": 239
+    },
+    {
+      "entity_type": "Overall",
+      "precision": 99.7,
+      "recall": 80.66,
+      "f1": 89.17,
+      "tp": 663,
+      "predicted": 665,
+      "gold": 822
+    }
+  ]
+}

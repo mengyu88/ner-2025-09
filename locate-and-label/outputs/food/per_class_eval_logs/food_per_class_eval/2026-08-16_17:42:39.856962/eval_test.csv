@@ -1,0 +1,2 @@
+ner_prec_micro;ner_rec_micro;ner_f1_micro;ner_prec_macro;ner_rec_macro;ner_f1_macro;epoch;iteration;global_iteration
+96.99248120300751;94.16058394160584;95.55555555555556;78.0319104343829;72.59497688043004;74.82181068164743;0;0;0

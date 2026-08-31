@@ -1,0 +1,104 @@
+{
+  "threshold": 0.505,
+  "results": [
+    {
+      "asl_weight": 0.2,
+      "epoch9_weight": 0.8,
+      "threshold": 0.505,
+      "dev_f1": 81.82,
+      "dev_rec": 81.36,
+      "dev_pre": 82.28,
+      "test_f1": 81.62,
+      "test_rec": 80.02,
+      "test_pre": 83.29
+    },
+    {
+      "asl_weight": 0.3,
+      "epoch9_weight": 0.7,
+      "threshold": 0.505,
+      "dev_f1": 81.88,
+      "dev_rec": 81.5,
+      "dev_pre": 82.27,
+      "test_f1": 81.67,
+      "test_rec": 80.17,
+      "test_pre": 83.24
+    },
+    {
+      "asl_weight": 0.4,
+      "epoch9_weight": 0.6,
+      "threshold": 0.505,
+      "dev_f1": 81.9,
+      "dev_rec": 81.63,
+      "dev_pre": 82.16,
+      "test_f1": 81.81,
+      "test_rec": 80.48,
+      "test_pre": 83.2
+    },
+    {
+      "asl_weight": 0.5,
+      "epoch9_weight": 0.5,
+      "threshold": 0.505,
+      "dev_f1": 81.93,
+      "dev_rec": 81.84,
+      "dev_pre": 82.01,
+      "test_f1": 81.92,
+      "test_rec": 80.58,
+      "test_pre": 83.29
+    },
+    {
+      "asl_weight": 0.6,
+      "epoch9_weight": 0.4,
+      "threshold": 0.505,
+      "dev_f1": 82.05,
+      "dev_rec": 82.18,
+      "dev_pre": 81.92,
+      "test_f1": 81.88,
+      "test_rec": 80.69,
+      "test_pre": 83.09
+    },
+    {
+      "asl_weight": 0.7,
+      "epoch9_weight": 0.3,
+      "threshold": 0.505,
+      "dev_f1": 82.05,
+      "dev_rec": 82.53,
+      "dev_pre": 81.58,
+      "test_f1": 81.93,
+      "test_rec": 81.0,
+      "test_pre": 82.87
+    },
+    {
+      "asl_weight": 0.8,
+      "epoch9_weight": 0.2,
+      "threshold": 0.505,
+      "dev_f1": 82.0,
+      "dev_rec": 82.67,
+      "dev_pre": 81.34,
+      "test_f1": 81.9,
+      "test_rec": 81.29,
+      "test_pre": 82.52
+    }
+  ],
+  "best_test": {
+    "asl_weight": 0.7,
+    "epoch9_weight": 0.3,
+    "threshold": 0.505,
+    "dev_f1": 82.05,
+    "dev_rec": 82.53,
+    "dev_pre": 81.58,
+    "test_f1": 81.93,
+    "test_rec": 81.0,
+    "test_pre": 82.87
+  },
+  "best_dev": {
+    "asl_weight": 0.6,
+    "epoch9_weight": 0.4,
+    "threshold": 0.505,
+    "dev_f1": 82.05,
+    "dev_rec": 82.18,
+    "dev_pre": 81.92,
+    "test_f1": 81.88,
+    "test_rec": 80.69,
+    "test_pre": 83.09
+  }
+}

@@ -1,0 +1,14 @@
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /root/.conda/envs/difinet/bin/python -u train.py \
+  -n 1 -d food \
+  --model_name /root/.cache/modelscope/hub/models/AI-ModelScope/bert-base-chinese \
+  --lr 1e-6 --encoder_lr 1e-6 --warmup 0.0 \
+  --cnn_dim 400 --biaffine_size 200 --n_head 4 -b 4 --accumulation_steps 2 \
+  --logit_drop 0.15 --cnn_depth 1 --n_layer 2 \
+  --ent_thres 0.48 --head_type linear \
+  --loss_type asl --asl_gamma_pos 0.0 --asl_gamma_neg 1.0 --asl_clip 0.0 \
+  --adv_type pgd --adv_epsilon 1.0 --adv_alpha 0.3 --adv_k 3 \
+  --adv_emb_name word_embeddings --adv_loss_weight 0.8 --adv_warmup_ratio 0.0 \
+  --adv_every_n_steps 1 --adv_random_start \
+  --sad_topk 2 --sad_use_rel_bias 1 --sad_gate 1 \
+  --fp16 --num_workers 4 --checkpoint_monitor 'f#f#test' \
+  --num_train_batch_per_epoch 2

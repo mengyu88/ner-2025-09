@@ -1,0 +1,3 @@
+setting,best_by,epoch,step,dev_precision,dev_recall,dev_f1,test_precision,test_recall,test_f1,logged_epochs,status,source_log
+w/o SNSA+HSR,best_dev,12,36012,98.79,97.03,97.9,98.4,97.08,97.73,13,stopped_after_epoch_13,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_161052/metric.log
+w/o SNSA+HSR,best_test,11,33011,97.96,97.15,97.56,98.28,97.2,97.74,13,stopped_after_epoch_13,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_161052/metric.log

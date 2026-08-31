@@ -1,0 +1,32 @@
+dev:   0%|          | 0/1669 [00:00<?, ?it/s]dev:  14%|█▍        | 231/1669 [00:00<00:00, 2302.71it/s]dev:  32%|███▏      | 541/1669 [00:00<00:00, 2766.79it/s]dev:  52%|█████▏    | 862/1669 [00:00<00:00, 2967.51it/s]dev:  74%|███████▎  | 1229/1669 [00:00<00:00, 3239.35it/s]dev:  97%|█████████▋| 1619/1669 [00:00<00:00, 3475.56it/s]                                                          test:   0%|          | 0/1854 [00:00<?, ?it/s]test:  18%|█▊        | 325/1854 [00:00<00:01, 1208.89it/s]test:  43%|████▎     | 804/1854 [00:00<00:00, 2451.37it/s]test:  69%|██████▊   | 1270/1854 [00:00<00:00, 3180.49it/s]test:  95%|█████████▌| 1766/1854 [00:00<00:00, 3751.40it/s]                                                           train:   0%|          | 0/15023 [00:00<?, ?it/s]train:   3%|▎         | 427/15023 [00:00<00:03, 4262.76it/s]train:   6%|▌         | 854/15023 [00:00<00:03, 4206.14it/s]train:   9%|▊         | 1278/15023 [00:00<00:03, 4220.53it/s]train:  11%|█▏        | 1701/15023 [00:00<00:03, 4222.43it/s]train:  14%|█▍        | 2124/15023 [00:00<00:03, 4190.75it/s]train:  17%|█▋        | 2548/15023 [00:00<00:02, 4205.22it/s]train:  20%|█▉        | 2969/15023 [00:00<00:02, 4101.45it/s]train:  23%|██▎       | 3413/15023 [00:00<00:02, 4204.76it/s]train:  26%|██▌       | 3843/15023 [00:00<00:02, 4232.60it/s]train:  28%|██▊       | 4267/15023 [00:01<00:02, 4211.13it/s]train:  31%|███▏      | 4705/15023 [00:01<00:02, 4260.99it/s]train:  34%|███▍      | 5138/15023 [00:01<00:02, 4279.80it/s]train:  37%|███▋      | 5567/15023 [00:01<00:02, 4259.29it/s]train:  40%|████      | 6013/15023 [00:01<00:02, 4316.50it/s]train:  43%|████▎     | 6445/15023 [00:01<00:02, 4275.17it/s]train:  46%|████▌     | 6873/15023 [00:01<00:01, 4208.14it/s]train:  49%|████▊     | 7295/15023 [00:01<00:01, 4149.64it/s]train:  51%|█████▏    | 7713/15023 [00:01<00:01, 4157.75it/s]train:  54%|█████▍    | 8129/15023 [00:01<00:01, 4098.38it/s]train:  57%|█████▋    | 8548/15023 [00:02<00:01, 4123.72it/s]train:  60%|█████▉    | 8972/15023 [00:02<00:01, 4156.44it/s]train:  63%|██████▎   | 9392/15023 [00:02<00:01, 4168.87it/s]train:  65%|██████▌   | 9815/15023 [00:02<00:01, 4184.02it/s]train:  68%|██████▊   | 10234/15023 [00:02<00:01, 4184.05it/s]train:  71%|███████   | 10671/15023 [00:02<00:01, 4237.18it/s]train:  74%|███████▍  | 11111/15023 [00:02<00:00, 4284.05it/s]train:  77%|███████▋  | 11568/15023 [00:02<00:00, 4368.71it/s]train:  80%|███████▉  | 12011/15023 [00:02<00:00, 4386.42it/s]train:  83%|████████▎ | 12450/15023 [00:03<00:00, 2585.29it/s]train:  86%|████████▌ | 12891/15023 [00:03<00:00, 2952.35it/s]train:  89%|████████▉ | 13345/15023 [00:03<00:00, 3305.04it/s]train:  92%|█████████▏| 13775/15023 [00:03<00:00, 3544.06it/s]train:  95%|█████████▍| 14239/15023 [00:03<00:00, 3824.96it/s]train:  98%|█████████▊| 14680/15023 [00:03<00:00, 3981.44it/s]                                                              [00:39:19] INFO     Save cache to /root/shared-nvme/project cache_results.py:343
+                    s/SPSR-Net/caches/e322a679_ner_caches.p                     
+                    kl.                                                         
+           INFO     In total 3 datasets:                            train.py:210
+                            dev has 1669 instances.                             
+                            test has 1854 instances.                            
+                            train has 15023 instances.                          
+                                                                                
+           INFO     5 labels: {'CELL_LINE': 0, 'CELL_TYPE': 1,      train.py:212
+                    'DNA': 2, 'PROTEIN': 3, 'RNA': 4},                          
+                    matrix_segs:{'ent': 5}                                      
+[00:39:21] INFO     Counter({'pretrain_model': 108310272, 'cnn1':   train.py:301
+                    11371144, 'biaffine': 1000000, 'W': 170800,                 
+                    'bhpc_projection': 156000, 'head_mlp': 153800,              
+                    'tail_mlp': 153800, 'score_head': 6005,                     
+                    'size_embedding': 750})                                     
+           INFO     Total param  121322571                          train.py:302
+           INFO     The checkpoint will be saved in this folder topk_saver.py:54
+                    for this time:                                              
+                    _saved_models/2026-08-16-00_39_11_469241.                   
+           INFO     Running evaluator sanity check for 1 batches. trainer.py:661
+[03:15:56] INFO     Catch early stop exception: After 4           trainer.py:697
+                    validations, no improvement for metric                      
+                    `f#f#test`(best value: 81.11).                              
+[03:15:57] INFO     The best performance for monitor     progress_callback.py:37
+                    f#f#test:81.11 was achieved in                              
+                    Epoch:14, Global Batch:52584. The                           
+                    evaluation result:                                          
+                    {'f#f#dev': 81.03, 'rec#f#dev':                             
+                    82.32, 'pre#f#dev': 79.78,                                  
+                    'f#f#test': 81.11, 'rec#f#test':                            
+                    81.22, 'pre#f#test': 81.0}                                  

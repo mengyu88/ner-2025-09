@@ -1,0 +1,154 @@
+{
+  "model": "Flat-Lattice-Transformer",
+  "checkpoint": "outputs/food/model.pt",
+  "scoring": "exact span and exact entity type",
+  "all_gold": {
+    "FC": {
+      "precision": 98.5,
+      "recall": 100.0,
+      "f1": 99.24433249370277,
+      "tp": 197,
+      "pred": 200,
+      "gold": 197
+    },
+    "FN": {
+      "precision": 91.17647058823529,
+      "recall": 83.78378378378379,
+      "f1": 87.32394366197184,
+      "tp": 31,
+      "pred": 34,
+      "gold": 37
+    },
+    "IN": {
+      "precision": 38.679245283018865,
+      "recall": 78.84615384615384,
+      "f1": 51.89873417721518,
+      "tp": 123,
+      "pred": 318,
+      "gold": 156
+    },
+    "IV": {
+      "precision": 69.34673366834171,
+      "recall": 91.3907284768212,
+      "f1": 78.85714285714286,
+      "tp": 138,
+      "pred": 199,
+      "gold": 151
+    },
+    "ORG": {
+      "precision": 100.0,
+      "recall": 57.142857142857146,
+      "f1": 72.72727272727273,
+      "tp": 20,
+      "pred": 20,
+      "gold": 35
+    },
+    "PER": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "pred": 0,
+      "gold": 1
+    },
+    "SN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "pred": 2,
+      "gold": 6
+    },
+    "SNum": {
+      "precision": 86.08695652173913,
+      "recall": 82.84518828451883,
+      "f1": 84.43496801705757,
+      "tp": 198,
+      "pred": 230,
+      "gold": 239
+    },
+    "overall": {
+      "precision": 70.48853439680957,
+      "recall": 86.00973236009732,
+      "f1": 77.4794520547945,
+      "tp": 707,
+      "pred": 1003,
+      "gold": 822
+    }
+  },
+  "flat_gold": {
+    "FC": {
+      "precision": 98.5,
+      "recall": 100.0,
+      "f1": 99.24433249370277,
+      "tp": 197,
+      "pred": 200,
+      "gold": 197
+    },
+    "FN": {
+      "precision": 91.17647058823529,
+      "recall": 83.78378378378379,
+      "f1": 87.32394366197184,
+      "tp": 31,
+      "pred": 34,
+      "gold": 37
+    },
+    "IN": {
+      "precision": 38.679245283018865,
+      "recall": 79.35483870967742,
+      "f1": 52.00845665961945,
+      "tp": 123,
+      "pred": 318,
+      "gold": 155
+    },
+    "IV": {
+      "precision": 69.34673366834171,
+      "recall": 91.3907284768212,
+      "f1": 78.85714285714286,
+      "tp": 138,
+      "pred": 199,
+      "gold": 151
+    },
+    "ORG": {
+      "precision": 100.0,
+      "recall": 57.142857142857146,
+      "f1": 72.72727272727273,
+      "tp": 20,
+      "pred": 20,
+      "gold": 35
+    },
+    "PER": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "pred": 0,
+      "gold": 1
+    },
+    "SN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "pred": 2,
+      "gold": 5
+    },
+    "SNum": {
+      "precision": 86.08695652173913,
+      "recall": 82.84518828451883,
+      "f1": 84.43496801705757,
+      "tp": 198,
+      "pred": 230,
+      "gold": 239
+    },
+    "overall": {
+      "precision": 70.48853439680957,
+      "recall": 86.21951219512195,
+      "f1": 77.5644541963796,
+      "tp": 707,
+      "pred": 1003,
+      "gold": 820
+    }
+  },
+  "note": "flat_gold follows the shortest non-overlap BMES conversion used in training; all_gold is the original FOOD annotation."
+}

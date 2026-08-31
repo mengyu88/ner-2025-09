@@ -1,0 +1,23 @@
+2026-08-16 17:42:39,918 [MainThread  ] [INFO ]  Dataset: data/datasets/food/test_context.json
+2026-08-16 17:42:39,919 [MainThread  ] [INFO ]  Model: identifier
+2026-08-16 17:42:41,668 [MainThread  ] [INFO ]  Relation type count: 1
+2026-08-16 17:42:41,669 [MainThread  ] [INFO ]  Entity type count: 9
+2026-08-16 17:42:41,669 [MainThread  ] [INFO ]  Entities:
+2026-08-16 17:42:41,669 [MainThread  ] [INFO ]  No Entity=0
+2026-08-16 17:42:41,669 [MainThread  ] [INFO ]  IN=1
+2026-08-16 17:42:41,669 [MainThread  ] [INFO ]  IV=2
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  FN=3
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  FC=4
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  SNum=5
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  SN=6
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  ORG=7
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  PER=8
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  Relations:
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  No Relation=0
+2026-08-16 17:42:41,670 [MainThread  ] [INFO ]  Dataset: test
+2026-08-16 17:42:41,671 [MainThread  ] [INFO ]  Document count: 511
+2026-08-16 17:42:41,671 [MainThread  ] [INFO ]  Relation count: 0
+2026-08-16 17:42:41,671 [MainThread  ] [INFO ]  Entity count: 822
+2026-08-16 17:42:41,671 [MainThread  ] [INFO ]  Context size: 162
+2026-08-16 17:42:43,349 [MainThread  ] [INFO ]  Evaluate: test
+2026-08-16 17:43:27,146 [MainThread  ] [INFO ]  Logged in: outputs/food/per_class_eval_logs/food_per_class_eval/2026-08-16_17:42:39.856962

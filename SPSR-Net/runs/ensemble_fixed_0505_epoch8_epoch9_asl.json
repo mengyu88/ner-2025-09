@@ -1,0 +1,35 @@
+{
+  "threshold": 0.505,
+  "results": [
+    {
+      "combo": "epoch8_bce+asl_8181",
+      "threshold": 0.505,
+      "dev_f1": 81.71,
+      "dev_rec": 83.4,
+      "dev_pre": 80.1,
+      "test_f1": 81.82,
+      "test_rec": 82.13,
+      "test_pre": 81.52
+    },
+    {
+      "combo": "epoch9_bce+asl_8181",
+      "threshold": 0.505,
+      "dev_f1": 81.93,
+      "dev_rec": 81.84,
+      "dev_pre": 82.01,
+      "test_f1": 81.92,
+      "test_rec": 80.58,
+      "test_pre": 83.29
+    },
+    {
+      "combo": "epoch8_bce+epoch9_bce+asl_8181",
+      "threshold": 0.505,
+      "dev_f1": 81.87,
+      "dev_rec": 82.41,
+      "dev_pre": 81.33,
+      "test_f1": 81.91,
+      "test_rec": 81.2,
+      "test_pre": 82.63
+    }
+  ]
+}

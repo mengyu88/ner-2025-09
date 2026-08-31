@@ -1,0 +1,37 @@
+[21:25:40] INFO     Read cache from /root/shared-nvme/proje cache_results.py:320
+                    cts/difinet/ner-2025-05/caches/9fc3571c                     
+                    _ner_caches.pkl (Saved on 2026-07-03                        
+                    00:06:01.987123).                                           
+           INFO     In total 3 datasets:                            train.py:208
+                            dev has 553 instances.                              
+                            test has 511 instances.                             
+                            train has 12003 instances.                          
+                                                                                
+           INFO     8 labels: {'FC': 0, 'FN': 1, 'IN': 2, 'IV': 3,  train.py:210
+                    'ORG': 4, 'PER': 5, 'SN': 6, 'SNum': 7},                    
+                    matrix_segs:{'ent': 8}                                      
+Traceback (most recent call last):
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/configuration_utils.py", line 601, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/utils/hub.py", line 284, in cached_path
+    output_path = get_from_cache(
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/utils/hub.py", line 548, in get_from_cache
+    raise FileNotFoundError(
+FileNotFoundError: Cannot find the requested files in the cached path and outgoing traffic has been disabled. To enable model look-ups and downloads online, set 'local_files_only' to False.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/shared-nvme/projects/difinet/ner-2025-05/train.py", line 251, in <module>
+    model = CNNNer(model_name, num_ner_tag=matrix_segs['ent'], cnn_dim=args.cnn_dim, biaffine_size=args.biaffine_size,
+  File "/root/shared-nvme/projects/difinet/ner-2025-05/model/model.py", line 112, in __init__
+    self.pretrain_model = AutoModel.from_pretrained(model_name)
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 423, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 705, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/configuration_utils.py", line 553, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/root/.conda/envs/difinet/lib/python3.10/site-packages/transformers/configuration_utils.py", line 641, in _get_config_dict
+    raise EnvironmentError(
+OSError: Can't load config for '/root/.cache/modelscope/hub/models/AI-ModelScope/bert-base-chinese'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure '/root/.cache/modelscope/hub/models/AI-ModelScope/bert-base-chinese' is the correct path to a directory containing a config.json file

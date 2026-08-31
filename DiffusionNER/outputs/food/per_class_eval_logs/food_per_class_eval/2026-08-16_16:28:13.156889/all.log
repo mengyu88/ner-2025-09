@@ -1,0 +1,71 @@
+2026-08-16 16:28:13,281 [MainThread  ] [INFO ]  {
+    "beta_schedule": "cosine",
+    "boundary_threshold": 0.0,
+    "cache_path": null,
+    "cls_threshold": 0.0,
+    "config": "configs/food_per_class_eval.conf",
+    "cpu": false,
+    "dataset_path": "/root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json",
+    "debug": false,
+    "device_id": 0,
+    "entity_threshold": 2.5,
+    "eval_batch_size": 32,
+    "example_count": null,
+    "extand_noise_spans": "concat",
+    "label": "food_per_class_eval",
+    "local_rank": -1,
+    "log_path": "/root/shared-nvme/projects/DiffusionNER/outputs/food/per_class_eval_logs",
+    "lowercase": false,
+    "lstm_layers": 2,
+    "model_path": "/root/shared-nvme/projects/DiffusionNER/outputs/food/checkpoints/food_train/2026-07-03_22:39:06.171418/best_model",
+    "model_type": "diffusionner",
+    "no_duplicate": false,
+    "no_overlapping": false,
+    "no_partial_overlapping": true,
+    "num_proposals": 60,
+    "pool_type": "max",
+    "pos_type": "sine",
+    "prop_drop": 0.1,
+    "repeat_gt_entities": -1,
+    "sample_dist_type": "normal",
+    "sampling_processes": 4,
+    "sampling_timesteps": 5,
+    "save_code": false,
+    "scale": 1.0,
+    "seed": 488,
+    "soi_pooling": "lrconcat",
+    "span_attn_layers": 2,
+    "span_renewal": false,
+    "split_epoch": 10,
+    "stage_one_lr_scale": 1.0,
+    "step_embed_type": "add",
+    "step_ensemble": false,
+    "store_examples": false,
+    "store_predictions": true,
+    "timesteps": 1000,
+    "tokenizer_path": "/root/.cache/modelscope/hub/AI-ModelScope/bert-base-chinese",
+    "types_path": "/root/shared-nvme/projects/DiffusionNER/data/datasets/food/food_types.json",
+    "wo_cross_attn": false,
+    "wo_self_attn": false,
+    "world_size": -1
+}
+2026-08-16 16:28:13,286 [MainThread  ] [INFO ]  Dataset: /root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json
+2026-08-16 16:28:13,286 [MainThread  ] [INFO ]  Model: diffusionner
+2026-08-16 16:28:14,798 [MainThread  ] [INFO ]  Entity type count: 9
+2026-08-16 16:28:14,799 [MainThread  ] [INFO ]  Entities:
+2026-08-16 16:28:14,799 [MainThread  ] [INFO ]  No Entity=0
+2026-08-16 16:28:14,799 [MainThread  ] [INFO ]  IN=1
+2026-08-16 16:28:14,799 [MainThread  ] [INFO ]  IV=2
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  FN=3
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  FC=4
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  SNum=5
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  SN=6
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  ORG=7
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  PER=8
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  Dataset: test
+2026-08-16 16:28:14,800 [MainThread  ] [INFO ]  Document count: 511
+2026-08-16 16:28:14,801 [MainThread  ] [INFO ]  Entity count: 822
+2026-08-16 16:28:14,801 [MainThread  ] [INFO ]  Context size: 161
+2026-08-16 16:28:16,530 [MainThread  ] [INFO ]  Freeze bert weights from begining
+2026-08-16 16:28:16,531 [MainThread  ] [INFO ]  Freeze transformer weights
+2026-08-16 16:28:17,224 [MainThread  ] [INFO ]  Evaluate: test

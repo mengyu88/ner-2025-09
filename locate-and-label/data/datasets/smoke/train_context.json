@@ -1,0 +1,25 @@
+[
+  {
+    "tokens": ["食品", "安全", "标准"],
+    "pos": ["NN", "NN", "NN"],
+    "entities": [
+      {"type": "FC", "start": 0, "end": 1},
+      {"type": "SN", "start": 0, "end": 3}
+    ],
+    "relations": [],
+    "ltokens": [],
+    "rtokens": [],
+    "org_id": "smoke_train_1"
+  },
+  {
+    "tokens": ["水产品", "检验"],
+    "pos": ["NN", "NN"],
+    "entities": [
+      {"type": "FC", "start": 0, "end": 1}
+    ],
+    "relations": [],
+    "ltokens": [],
+    "rtokens": [],
+    "org_id": "smoke_train_2"
+  }
+]

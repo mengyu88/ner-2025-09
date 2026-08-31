@@ -1,0 +1,90 @@
+/root/.conda/envs/difinet/lib/python3.10/site-packages/fastNLP/envs/utils.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import DistributionNotFound
+dev:   0%|          | 0/553 [00:00<?, ?it/s]dev:  74%|███████▍  | 410/553 [00:00<00:00, 4099.72it/s]                                                        test:   0%|          | 0/511 [00:00<?, ?it/s]                                             train:   0%|          | 0/12003 [00:00<?, ?it/s]train:   6%|▌         | 670/12003 [00:00<00:01, 6694.45it/s]train:  11%|█         | 1349/12003 [00:00<00:01, 6745.81it/s]train:  17%|█▋        | 2089/12003 [00:00<00:01, 7041.91it/s]train:  23%|██▎       | 2810/12003 [00:00<00:01, 7106.50it/s]train:  30%|██▉       | 3555/12003 [00:00<00:01, 7227.73it/s]train:  36%|███▌      | 4293/12003 [00:00<00:01, 7279.15it/s]train:  42%|████▏     | 5021/12003 [00:00<00:00, 7140.05it/s]train:  48%|████▊     | 5789/12003 [00:00<00:00, 7308.63it/s]train:  54%|█████▍    | 6532/12003 [00:00<00:00, 7344.67it/s]train:  61%|██████    | 7267/12003 [00:01<00:00, 7328.45it/s]train:  67%|██████▋   | 8001/12003 [00:01<00:00, 7285.68it/s]train:  73%|███████▎  | 8730/12003 [00:01<00:00, 7256.27it/s]train:  79%|███████▉  | 9466/12003 [00:01<00:00, 7285.58it/s]train:  85%|████████▍ | 10195/12003 [00:01<00:00, 7230.44it/s]train:  91%|█████████ | 10929/12003 [00:01<00:00, 7261.80it/s]train:  97%|█████████▋| 11656/12003 [00:01<00:00, 7263.49it/s]                                                              Some weights of the model checkpoint at /root/.cache/modelscope/hub/AI-ModelScope/bert-base-chinese were not used when initializing BertModel: ['cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/root/.conda/envs/difinet/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1712608935911/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+[
+  {
+    "entity_type": "FC",
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1": 100.0,
+    "tp": 197,
+    "predicted": 197,
+    "gold": 197
+  },
+  {
+    "entity_type": "FN",
+    "precision": 97.22,
+    "recall": 94.59,
+    "f1": 95.89,
+    "tp": 35,
+    "predicted": 36,
+    "gold": 37
+  },
+  {
+    "entity_type": "IN",
+    "precision": 99.33,
+    "recall": 95.51,
+    "f1": 97.39,
+    "tp": 149,
+    "predicted": 150,
+    "gold": 156
+  },
+  {
+    "entity_type": "IV",
+    "precision": 100.0,
+    "recall": 97.35,
+    "f1": 98.66,
+    "tp": 147,
+    "predicted": 147,
+    "gold": 151
+  },
+  {
+    "entity_type": "ORG",
+    "precision": 87.5,
+    "recall": 80.0,
+    "f1": 83.58,
+    "tp": 28,
+    "predicted": 32,
+    "gold": 35
+  },
+  {
+    "entity_type": "PER",
+    "precision": 0,
+    "recall": 0.0,
+    "f1": 0,
+    "tp": 0,
+    "predicted": 0,
+    "gold": 1
+  },
+  {
+    "entity_type": "SN",
+    "precision": 75.0,
+    "recall": 50.0,
+    "f1": 60.0,
+    "tp": 3,
+    "predicted": 4,
+    "gold": 6
+  },
+  {
+    "entity_type": "SNum",
+    "precision": 97.55,
+    "recall": 100.0,
+    "f1": 98.76,
+    "tp": 239,
+    "predicted": 245,
+    "gold": 239
+  },
+  {
+    "entity_type": "Overall",
+    "precision": 98.4,
+    "recall": 97.08,
+    "f1": 97.73,
+    "tp": 798,
+    "predicted": 811,
+    "gold": 822
+  }
+]

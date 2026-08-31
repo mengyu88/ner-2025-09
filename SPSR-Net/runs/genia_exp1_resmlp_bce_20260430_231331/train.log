@@ -1,0 +1,25 @@
+[23:13:35] INFO     Read cache from /root/ner/caches/465f9b cache_results.py:320
+                    96_ner_caches.pkl (Saved on 2026-04-30                      
+                    16:34:51.406662).                                           
+           INFO     In total 3 datasets:                            train.py:182
+                            dev has 1669 instances.                             
+                            test has 1854 instances.                            
+                            train has 15023 instances.                          
+                                                                                
+           INFO     5 labels: {'CELL_LINE': 0, 'CELL_TYPE': 1,      train.py:184
+                    'DNA': 2, 'PROTEIN': 3, 'RNA': 4},                          
+                    matrix_segs:{'ent': 5}                                      
+[23:13:37] INFO     Counter({'pretrain_model': 108310272, 'cnn1':   train.py:236
+                    11371144, 'score_head': 2179211, 'biaffine':                
+                    1000000, 'W': 170800, 'head_mlp': 153800,                   
+                    'tail_mlp': 153800, 'size_embedding': 750})                 
+           INFO     Total param  123339777                          train.py:237
+           INFO     The checkpoint will be saved in this folder topk_saver.py:54
+                    for this time:                                              
+                    _saved_models/2026-04-30-23_13_33_241805.                   
+           INFO     Enable adversarial training: type=pgd,          train.py:282
+                    epsilon=1.0, alpha=0.3, k=3,                                
+                    emb_name=word_embeddings, loss_weight=0.8,                  
+                    warmup_ratio=0.1, every_n_steps=1,                          
+                    random_start=True                                           
+           INFO     Running evaluator sanity check for 1 batches. trainer.py:661

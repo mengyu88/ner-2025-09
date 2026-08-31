@@ -1,0 +1,13 @@
+{
+  "entities": {
+    "FC": {
+      "short": "FC",
+      "verbose": "Food Category"
+    },
+    "SN": {
+      "short": "SN",
+      "verbose": "Standard Name"
+    }
+  },
+  "relations": {}
+}

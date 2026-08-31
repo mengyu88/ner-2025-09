@@ -1,0 +1,12 @@
+[13:54:13] INFO     Read cache from /root/shared-nvme/proje cache_results.py:320
+                    cts/SPSR-Net/caches/963803bb_ner_caches                     
+                    .pkl (Saved on 2026-08-19                                   
+                    13:52:07.573263).                                           
+[13:54:14] INFO     In total 3 datasets:                            train.py:216
+                            dev has 1669 instances.                             
+                            test has 1854 instances.                            
+                            train has 15023 instances.                          
+                                                                                
+           INFO     5 labels: {'CELL_LINE': 0, 'CELL_TYPE': 1,      train.py:218
+                    'DNA': 2, 'PROTEIN': 3, 'RNA': 4},                          
+                    matrix_segs:{'ent': 5}                                      

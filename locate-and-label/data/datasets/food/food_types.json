@@ -1,0 +1,37 @@
+{
+  "entities": {
+    "IN": {
+      "short": "IN",
+      "verbose": "IN"
+    },
+    "IV": {
+      "short": "IV",
+      "verbose": "IV"
+    },
+    "FN": {
+      "short": "FN",
+      "verbose": "FN"
+    },
+    "FC": {
+      "short": "FC",
+      "verbose": "FC"
+    },
+    "SNum": {
+      "short": "SNum",
+      "verbose": "SNum"
+    },
+    "SN": {
+      "short": "SN",
+      "verbose": "SN"
+    },
+    "ORG": {
+      "short": "ORG",
+      "verbose": "ORG"
+    },
+    "PER": {
+      "short": "PER",
+      "verbose": "PER"
+    }
+  },
+  "relations": {}
+}

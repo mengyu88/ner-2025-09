@@ -1,0 +1,138 @@
+{
+  "case_text": "减少糖的指标值为与参考食品比较，糖含量减少25%以上，检验方法为参考食品(基准食品)应为消费者熟知、容易理解的同类或同一属类食品。",
+  "translated_rule": "Reduce sugar: compared with a reference food, sugar content is reduced by at least 25%.",
+  "units": [
+    {
+      "name": "Reduce sugar (IN)",
+      "text": "减少糖",
+      "span": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Comparison",
+      "text": "与参考食品比较",
+      "span": [
+        8,
+        14
+      ]
+    },
+    {
+      "name": "Reference food",
+      "text": "参考食品",
+      "span": [
+        9,
+        12
+      ]
+    },
+    {
+      "name": "Sugar",
+      "text": "糖",
+      "span": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Reduction",
+      "text": "含量减少",
+      "span": [
+        17,
+        20
+      ]
+    },
+    {
+      "name": "Threshold ≥25%",
+      "text": "25%以上",
+      "span": [
+        21,
+        25
+      ]
+    },
+    {
+      "name": "Gold IV span",
+      "text": "与参考食品比较，糖含量减少25%以上",
+      "span": [
+        8,
+        25
+      ]
+    }
+  ],
+  "anchor_units": [
+    "Reduce sugar (IN)",
+    "Gold IV span"
+  ],
+  "matrices": {
+    "w/o SNSA": [
+      [
+        1.0,
+        0.5706164836883545
+      ],
+      [
+        0.5257161855697632,
+        0.84150630235672
+      ],
+      [
+        0.5120036602020264,
+        0.8230845928192139
+      ],
+      [
+        0.45076534152030945,
+        0.6797281503677368
+      ],
+      [
+        0.5257679224014282,
+        0.8098580837249756
+      ],
+      [
+        0.43379148840904236,
+        0.7421114444732666
+      ],
+      [
+        0.570616602897644,
+        1.0
+      ]
+    ],
+    "Full SPSR-Net": [
+      [
+        0.9999998807907104,
+        0.41433119773864746
+      ],
+      [
+        0.47908204793930054,
+        0.8151990175247192
+      ],
+      [
+        0.28025728464126587,
+        0.6961202025413513
+      ],
+      [
+        0.21790269017219543,
+        0.5406179428100586
+      ],
+      [
+        0.3711467981338501,
+        0.7090462446212769
+      ],
+      [
+        0.3295988142490387,
+        0.7407091856002808
+      ],
+      [
+        0.4143312871456146,
+        1.0
+      ]
+    ]
+  },
+  "exact_gold_iv_probability": {
+    "w/o SNSA": 0.1937253773212433,
+    "Full SPSR-Net": 0.9785052537918091
+  },
+  "threshold": 0.48,
+  "checkpoints": {
+    "w/o SNSA": "/root/shared-nvme/projects/SPSR-Net/_saved_models/2026-07-04-20_43_24_622169/model-epoch_6-batch_18006-f#f#test_97.13/fastnlp_model.pkl.tar",
+    "Full SPSR-Net": "/root/shared-nvme/projects/SPSR-Net/_saved_models/2026-07-03-00_07_48_429272/model-epoch_15-batch_45015-f#f#test_97.98/fastnlp_model.pkl.tar"
+  },
+  "feature_source": "Input to score_head (span representation immediately before final classification)."
+}

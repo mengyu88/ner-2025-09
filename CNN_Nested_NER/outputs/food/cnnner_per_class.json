@@ -1,0 +1,87 @@
+{
+  "checkpoint": "outputs/food/checkpoints/2026-07-03-12_08_49_362629/model-epoch_50-batch_12550-f#f#dev_98.03/fastnlp_model.pkl.tar",
+  "threshold": 0.5,
+  "rows": [
+    {
+      "entity_type": "FC",
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 197,
+      "predicted": 197,
+      "gold": 197
+    },
+    {
+      "entity_type": "FN",
+      "precision": 97.22,
+      "recall": 94.59,
+      "f1": 95.89,
+      "tp": 35,
+      "predicted": 36,
+      "gold": 37
+    },
+    {
+      "entity_type": "IN",
+      "precision": 99.33,
+      "recall": 95.51,
+      "f1": 97.39,
+      "tp": 149,
+      "predicted": 150,
+      "gold": 156
+    },
+    {
+      "entity_type": "IV",
+      "precision": 100.0,
+      "recall": 97.35,
+      "f1": 98.66,
+      "tp": 147,
+      "predicted": 147,
+      "gold": 151
+    },
+    {
+      "entity_type": "ORG",
+      "precision": 87.5,
+      "recall": 80.0,
+      "f1": 83.58,
+      "tp": 28,
+      "predicted": 32,
+      "gold": 35
+    },
+    {
+      "entity_type": "PER",
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "tp": 0,
+      "predicted": 0,
+      "gold": 1
+    },
+    {
+      "entity_type": "SN",
+      "precision": 75.0,
+      "recall": 50.0,
+      "f1": 60.0,
+      "tp": 3,
+      "predicted": 4,
+      "gold": 6
+    },
+    {
+      "entity_type": "SNum",
+      "precision": 97.55,
+      "recall": 100.0,
+      "f1": 98.76,
+      "tp": 239,
+      "predicted": 245,
+      "gold": 239
+    },
+    {
+      "entity_type": "Overall",
+      "precision": 98.4,
+      "recall": 97.08,
+      "f1": 97.73,
+      "tp": 798,
+      "predicted": 811,
+      "gold": 822
+    }
+  ]
+}

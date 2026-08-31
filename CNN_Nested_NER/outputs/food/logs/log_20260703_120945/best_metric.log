@@ -1,0 +1,15 @@
+{"metric": {"f#f#dev": 69.12, "rec#f#dev": 80.17, "pre#f#dev": 60.76, "f#f#test": 66.67, "rec#f#test": 80.66, "pre#f#test": 56.81, "step": 251, "epoch": 1}}
+{"metric": {"f#f#dev": 84.81, "rec#f#dev": 90.5, "pre#f#dev": 79.79, "f#f#test": 81.21, "rec#f#test": 83.58, "pre#f#test": 78.97, "step": 502, "epoch": 2}}
+{"metric": {"f#f#dev": 87.27, "rec#f#dev": 95.25, "pre#f#dev": 80.52, "f#f#test": 84.18, "rec#f#test": 92.58, "pre#f#test": 77.18, "step": 753, "epoch": 3}}
+{"metric": {"f#f#dev": 92.46, "rec#f#dev": 94.66, "pre#f#dev": 90.36, "f#f#test": 91.04, "rec#f#test": 90.88, "pre#f#test": 91.21, "step": 1004, "epoch": 4}}
+{"metric": {"f#f#dev": 93.51, "rec#f#dev": 95.84, "pre#f#dev": 91.29, "f#f#test": 92.57, "rec#f#test": 92.46, "pre#f#test": 92.68, "step": 1255, "epoch": 5}}
+{"metric": {"f#f#dev": 96.03, "rec#f#dev": 96.32, "pre#f#dev": 95.75, "f#f#test": 93.64, "rec#f#test": 93.07, "pre#f#test": 94.21, "step": 1506, "epoch": 6}}
+{"metric": {"f#f#dev": 96.44, "rec#f#dev": 96.56, "pre#f#dev": 96.33, "f#f#test": 93.85, "rec#f#test": 93.67, "pre#f#test": 94.02, "step": 2259, "epoch": 9}}
+{"metric": {"f#f#dev": 96.85, "rec#f#dev": 96.91, "pre#f#dev": 96.8, "f#f#test": 94.59, "rec#f#test": 92.58, "pre#f#test": 96.7, "step": 2510, "epoch": 10}}
+{"metric": {"f#f#dev": 96.9, "rec#f#dev": 96.56, "pre#f#dev": 97.25, "f#f#test": 96.36, "rec#f#test": 95.13, "pre#f#test": 97.63, "step": 2761, "epoch": 11}}
+{"metric": {"f#f#dev": 96.93, "rec#f#dev": 97.62, "pre#f#dev": 96.25, "f#f#test": 94.85, "rec#f#test": 94.04, "pre#f#test": 95.67, "step": 3012, "epoch": 12}}
+{"metric": {"f#f#dev": 97.49, "rec#f#dev": 96.91, "pre#f#dev": 98.08, "f#f#test": 96.0, "rec#f#test": 94.89, "pre#f#test": 97.14, "step": 3263, "epoch": 13}}
+{"metric": {"f#f#dev": 97.84, "rec#f#dev": 96.91, "pre#f#dev": 98.79, "f#f#test": 96.63, "rec#f#test": 95.99, "pre#f#test": 97.29, "step": 4016, "epoch": 16}}
+{"metric": {"f#f#dev": 97.91, "rec#f#dev": 97.51, "pre#f#dev": 98.32, "f#f#test": 97.61, "rec#f#test": 96.72, "pre#f#test": 98.51, "step": 9287, "epoch": 37}}
+{"metric": {"f#f#dev": 97.97, "rec#f#dev": 97.62, "pre#f#dev": 98.33, "f#f#test": 97.43, "rec#f#test": 96.96, "pre#f#test": 97.91, "step": 11044, "epoch": 44}}
+{"metric": {"f#f#dev": 98.03, "rec#f#dev": 97.62, "pre#f#dev": 98.44, "f#f#test": 97.67, "rec#f#test": 96.96, "pre#f#test": 98.4, "step": 11295, "epoch": 45}}

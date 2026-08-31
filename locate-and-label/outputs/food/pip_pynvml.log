@@ -1,0 +1,6 @@
+Collecting nvidia-ml-py
+  Downloading nvidia_ml_py-13.610.43-py3-none-any.whl.metadata (9.7 kB)
+Downloading nvidia_ml_py-13.610.43-py3-none-any.whl (53 kB)
+Installing collected packages: nvidia-ml-py
+Successfully installed nvidia-ml-py-13.610.43
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

@@ -1,0 +1,195 @@
+{
+  "checkpoint": "/root/ner/_saved_models/2026-05-01-01_03_54_110817/model-epoch_1-batch_3756-f#f#test_81.81/fastnlp_model.pkl.tar",
+  "thresholds": [
+    0.42,
+    0.43,
+    0.44,
+    0.45,
+    0.46,
+    0.47,
+    0.48,
+    0.49,
+    0.5,
+    0.51,
+    0.52,
+    0.53,
+    0.54,
+    0.55,
+    0.56,
+    0.57,
+    0.58
+  ],
+  "results": [
+    {
+      "threshold": 0.42,
+      "dev_f1": 81.51,
+      "dev_rec": 85.28,
+      "dev_pre": 78.05,
+      "test_f1": 81.44,
+      "test_rec": 83.45,
+      "test_pre": 79.51
+    },
+    {
+      "threshold": 0.43,
+      "dev_f1": 81.56,
+      "dev_rec": 85.07,
+      "dev_pre": 78.33,
+      "test_f1": 81.44,
+      "test_rec": 83.22,
+      "test_pre": 79.73
+    },
+    {
+      "threshold": 0.44,
+      "dev_f1": 81.64,
+      "dev_rec": 84.86,
+      "dev_pre": 78.65,
+      "test_f1": 81.55,
+      "test_rec": 83.02,
+      "test_pre": 80.14
+    },
+    {
+      "threshold": 0.45,
+      "dev_f1": 81.68,
+      "dev_rec": 84.61,
+      "dev_pre": 78.95,
+      "test_f1": 81.62,
+      "test_rec": 82.78,
+      "test_pre": 80.49
+    },
+    {
+      "threshold": 0.46,
+      "dev_f1": 81.74,
+      "dev_rec": 84.29,
+      "dev_pre": 79.33,
+      "test_f1": 81.65,
+      "test_rec": 82.62,
+      "test_pre": 80.71
+    },
+    {
+      "threshold": 0.47,
+      "dev_f1": 81.73,
+      "dev_rec": 84.02,
+      "dev_pre": 79.57,
+      "test_f1": 81.72,
+      "test_rec": 82.4,
+      "test_pre": 81.05
+    },
+    {
+      "threshold": 0.48,
+      "dev_f1": 81.77,
+      "dev_rec": 83.83,
+      "dev_pre": 79.81,
+      "test_f1": 81.81,
+      "test_rec": 82.2,
+      "test_pre": 81.42
+    },
+    {
+      "threshold": 0.49,
+      "dev_f1": 81.84,
+      "dev_rec": 83.67,
+      "dev_pre": 80.08,
+      "test_f1": 81.8,
+      "test_rec": 81.95,
+      "test_pre": 81.65
+    },
+    {
+      "threshold": 0.5,
+      "dev_f1": 81.82,
+      "dev_rec": 83.35,
+      "dev_pre": 80.34,
+      "test_f1": 81.82,
+      "test_rec": 81.75,
+      "test_pre": 81.9
+    },
+    {
+      "threshold": 0.51,
+      "dev_f1": 81.7,
+      "dev_rec": 82.94,
+      "dev_pre": 80.49,
+      "test_f1": 81.81,
+      "test_rec": 81.51,
+      "test_pre": 82.11
+    },
+    {
+      "threshold": 0.52,
+      "dev_f1": 81.74,
+      "dev_rec": 82.64,
+      "dev_pre": 80.86,
+      "test_f1": 81.72,
+      "test_rec": 81.2,
+      "test_pre": 82.25
+    },
+    {
+      "threshold": 0.53,
+      "dev_f1": 81.74,
+      "dev_rec": 82.37,
+      "dev_pre": 81.12,
+      "test_f1": 81.65,
+      "test_rec": 80.89,
+      "test_pre": 82.42
+    },
+    {
+      "threshold": 0.54,
+      "dev_f1": 81.8,
+      "dev_rec": 82.14,
+      "dev_pre": 81.47,
+      "test_f1": 81.6,
+      "test_rec": 80.57,
+      "test_pre": 82.67
+    },
+    {
+      "threshold": 0.55,
+      "dev_f1": 81.8,
+      "dev_rec": 81.89,
+      "dev_pre": 81.72,
+      "test_f1": 81.64,
+      "test_rec": 80.39,
+      "test_pre": 82.93
+    },
+    {
+      "threshold": 0.56,
+      "dev_f1": 81.86,
+      "dev_rec": 81.68,
+      "dev_pre": 82.04,
+      "test_f1": 81.66,
+      "test_rec": 80.17,
+      "test_pre": 83.2
+    },
+    {
+      "threshold": 0.57,
+      "dev_f1": 81.9,
+      "dev_rec": 81.47,
+      "dev_pre": 82.32,
+      "test_f1": 81.6,
+      "test_rec": 79.91,
+      "test_pre": 83.36
+    },
+    {
+      "threshold": 0.58,
+      "dev_f1": 81.97,
+      "dev_rec": 81.34,
+      "dev_pre": 82.6,
+      "test_f1": 81.53,
+      "test_rec": 79.59,
+      "test_pre": 83.56
+    }
+  ],
+  "best_test": {
+    "threshold": 0.5,
+    "dev_f1": 81.82,
+    "dev_rec": 83.35,
+    "dev_pre": 80.34,
+    "test_f1": 81.82,
+    "test_rec": 81.75,
+    "test_pre": 81.9
+  },
+  "best_dev": {
+    "threshold": 0.58,
+    "dev_f1": 81.97,
+    "dev_rec": 81.34,
+    "dev_pre": 82.6,
+    "test_f1": 81.53,
+    "test_rec": 79.59,
+    "test_pre": 83.56
+  }
+}

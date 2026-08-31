@@ -1,0 +1,66 @@
+{
+  "threshold": 0.48,
+  "scores": {
+    "w/o HSR": {
+      "Mineral increase": 0.661878764629364,
+      "Energy reduction": 0.7062763571739197,
+      "Dietary-fibre claim": 0.6860191822052002,
+      "Sugar reduction": 0.6935709118843079
+    },
+    "Full SPSR-Net": {
+      "Mineral increase": 0.9471001625061035,
+      "Energy reduction": 0.8805798292160034,
+      "Dietary-fibre claim": 0.8004779815673828,
+      "Sugar reduction": 0.9785052537918091
+    }
+  },
+  "gold_spans": {
+    "Mineral increase": {
+      "start": 16,
+      "end": 41,
+      "text": "与参考食品比较，矿物质含量增加25%以上(含25%)"
+    },
+    "Energy reduction": {
+      "start": 9,
+      "end": 32,
+      "text": "与参考食品比较，能量值减少25%以上(含25%)"
+    },
+    "Dietary-fibre claim": {
+      "start": 14,
+      "end": 37,
+      "text": "与参考食品比较，膳食纤维含量增加或减少25%以上"
+    },
+    "Sugar reduction": {
+      "start": 8,
+      "end": 25,
+      "text": "与参考食品比较，糖含量减少25%以上"
+    }
+  },
+  "cases": [
+    {
+      "id": "Mineral increase",
+      "rule": "Mineral content increases by ≥25% versus a reference food",
+      "text": "增加矿物质(不包括钠)的指标值为与参考食品比较，矿物质含量增加25%以上(含25%)，检验方法为参考食品的数据来源：1.同一企业同类或同一属类食品的营养成分含量或2.《中国食物成分表》中同类食品营养成分含量。"
+    },
+    {
+      "id": "Energy reduction",
+      "rule": "Energy value decreases by ≥25% versus a reference food",
+      "text": "减少能量的指标值为与参考食品比较，能量值减少25%以上(含25%)，检验方法为参考食品的数据来源：1.同一企业同类或同一属类食品的营养成分含量或2.《中国食物成分表》中同类食品营养成分含量。"
+    },
+    {
+      "id": "Dietary-fibre claim",
+      "rule": "Dietary fibre changes by ≥25% versus a reference food",
+      "text": "增加或减少膳食纤维的指标值为与参考食品比较，膳食纤维含量增加或减少25%以上，检验方法为参考食品(基准食品)应为消费者熟知、容易理解的同类或同一属类食品。"
+    },
+    {
+      "id": "Sugar reduction",
+      "rule": "Sugar content decreases by ≥25% versus a reference food",
+      "text": "减少糖的指标值为与参考食品比较，糖含量减少25%以上，检验方法为参考食品(基准食品)应为消费者熟知、容易理解的同类或同一属类食品。"
+    }
+  ],
+  "probability_rule": "sigmoid(logits), then average both span directions",
+  "checkpoints": {
+    "w/o HSR": "/root/shared-nvme/projects/SPSR-Net/_saved_models/2026-07-05-22_12_33_633670/model-epoch_8-batch_24008-f#f#test_95.87/fastnlp_model.pkl.tar",
+    "Full SPSR-Net": "/root/shared-nvme/projects/SPSR-Net/_saved_models/2026-07-03-00_07_48_429272/model-epoch_15-batch_45015-f#f#test_97.98/fastnlp_model.pkl.tar"
+  }
+}

@@ -1,0 +1,1 @@
+ner_prec_micro;ner_rec_micro;ner_f1_micro;ner_prec_macro;ner_rec_macro;ner_f1_macro;loc_prec_micro;loc_rec_micro;loc_f1_micro;loc_prec_macro;loc_rec_macro;loc_f1_macro;cls_prec_micro;cls_rec_micro;cls_f1_micro;cls_prec_macro;cls_rec_macro;cls_f1_macro;epoch;iteration;global_iteration

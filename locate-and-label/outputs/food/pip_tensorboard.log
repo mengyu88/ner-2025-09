@@ -1,0 +1,36 @@
+Collecting tensorboard
+  Downloading tensorboard-2.21.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting absl-py>=0.4 (from tensorboard)
+  Downloading absl_py-2.5.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting grpcio<2.0,>=1.74.0 (from tensorboard)
+  Downloading grpcio-1.83.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
+Collecting markdown>=2.6.8 (from tensorboard)
+  Downloading markdown-3.10.3-py3-none-any.whl.metadata (5.1 kB)
+Requirement already satisfied: numpy>=1.12.0 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from tensorboard) (1.23.5)
+Requirement already satisfied: packaging in /root/.conda/envs/difinet/lib/python3.10/site-packages (from tensorboard) (26.2)
+Collecting pillow (from tensorboard)
+  Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting protobuf<8.0.0,>=6.31.1 (from tensorboard)
+  Downloading protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Requirement already satisfied: setuptools>=41.0.0 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from tensorboard) (80.10.2)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard)
+  Downloading tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata (1.1 kB)
+Requirement already satisfied: werkzeug>=1.0.1 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from tensorboard) (3.1.8)
+Requirement already satisfied: typing-extensions~=4.12 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from grpcio<2.0,>=1.74.0->tensorboard) (4.16.0)
+Requirement already satisfied: markupsafe>=2.1.1 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from werkzeug>=1.0.1->tensorboard) (3.0.3)
+Downloading tensorboard-2.21.0-py3-none-any.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 16.8 kB/s  0:06:48
+Downloading grpcio-1.83.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 16.6 kB/s  0:08:16
+Downloading protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl (327 kB)
+Downloading tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 16.6 kB/s  0:07:17
+Downloading absl_py-2.5.0-py3-none-any.whl (137 kB)
+Downloading markdown-3.10.3-py3-none-any.whl (110 kB)
+Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 12.8 kB/s  0:08:16
+WARNING: Error parsing dependencies of fastnlp: [Errno 2] No such file or directory: '/root/.conda/envs/difinet/lib/python3.10/site-packages/fastnlp-1.0.1.dist-info/METADATA'
+Installing collected packages: tensorboard-data-server, protobuf, pillow, markdown, grpcio, absl-py, tensorboard
+
+Successfully installed absl-py-2.5.0 grpcio-1.83.0 markdown-3.10.3 pillow-12.3.0 protobuf-7.35.1 tensorboard-2.21.0 tensorboard-data-server-0.7.2
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

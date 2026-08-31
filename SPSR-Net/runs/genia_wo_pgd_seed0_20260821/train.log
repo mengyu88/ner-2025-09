@@ -1,0 +1,32 @@
+[00:58:36] INFO     Read cache from /root/shared-nvme/proje cache_results.py:320
+                    cts/SPSR-Net/caches/3fac05e2_ner_caches                     
+                    .pkl (Saved on 2026-08-20                                   
+                    19:46:49.288688).                                           
+           INFO     In total 3 datasets:                            train.py:242
+                            dev has 1669 instances.                             
+                            test has 1854 instances.                            
+                            train has 15023 instances.                          
+                                                                                
+           INFO     5 labels: {'CELL_LINE': 0, 'CELL_TYPE': 1,      train.py:244
+                    'DNA': 2, 'PROTEIN': 3, 'RNA': 4},                          
+                    matrix_segs:{'ent': 5}                                      
+[00:58:38] INFO     Counter({'pretrain_model': 108310272, 'cnn1':   train.py:381
+                    11371144, 'biaffine': 1000000, 'W': 170800,                 
+                    'head_mlp': 153800, 'tail_mlp': 153800,                     
+                    'score_head': 6005, 'size_embedding': 750})                 
+           INFO     Total param  121166571                          train.py:382
+           INFO     The checkpoint will be saved in this folder topk_saver.py:54
+                    for this time:                                              
+                    _saved_models/2026-08-21-00_58_33_508769.                   
+           INFO     Running evaluator sanity check for 1 batches. trainer.py:661
+[02:26:50] INFO     Catch early stop exception: After 5           trainer.py:697
+                    validations, no improvement for metric                      
+                    `f#f#dev`(best value: 81.19).                               
+[02:26:51] INFO     The best performance for monitor     progress_callback.py:37
+                    f#f#dev:81.19 was achieved in                               
+                    Epoch:6, Global Batch:22536. The                            
+                    evaluation result:                                          
+                    {'f#f#dev': 81.19, 'rec#f#dev':                             
+                    80.47, 'pre#f#dev': 81.93,                                  
+                    'f#f#test': 80.76, 'rec#f#test':                            
+                    78.9, 'pre#f#test': 82.71}                                  

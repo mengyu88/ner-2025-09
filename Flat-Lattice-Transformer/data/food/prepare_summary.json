@@ -1,0 +1,26 @@
+{
+  "source_dir": "/root/data/food_jsonline",
+  "out_dir": "/root/shared-nvme/projects/Flat-Lattice-Transformer/data/food",
+  "flatten_strategy": "shortest",
+  "lexicon_size": 10073,
+  "splits": {
+    "train": {
+      "sentences": 12003,
+      "entities_all": 20661,
+      "entities_dropped_for_flat_tags": 858,
+      "max_len": 160
+    },
+    "dev": {
+      "sentences": 553,
+      "entities_all": 842,
+      "entities_dropped_for_flat_tags": 5,
+      "max_len": 160
+    },
+    "test": {
+      "sentences": 511,
+      "entities_all": 822,
+      "entities_dropped_for_flat_tags": 2,
+      "max_len": 160
+    }
+  }
+}

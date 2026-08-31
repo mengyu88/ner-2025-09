@@ -1,0 +1,7 @@
+[2026-07-05T23:58:39+08:00] watcher started
+[2026-07-05T23:58:39+08:00] waiting for w_o_hsr_continue wrapper pid=9346
+[2026-07-05T23:59:31+08:00] watcher started
+[2026-07-05T23:59:31+08:00] waiting for w_o_hsr_continue wrapper pid=9346
+[2026-07-06T02:11:31+08:00] w_o_hsr_continue wrapper pid=9346 exited
+[2026-07-06T02:11:31+08:00] starting w_o_pgd_at in /root/shared-nvme/projects/difinet/ner-2025-05/runs/food_genia_ablation_remaining_e10_20260704_204323/w_o_pgd_at_20260706_021131
+[2026-07-06T03:33:03+08:00] w_o_pgd_at finished with exit_code=0

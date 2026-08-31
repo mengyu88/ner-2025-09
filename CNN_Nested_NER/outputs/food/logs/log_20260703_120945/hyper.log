@@ -1,0 +1,2 @@
+{"hyper": {"lr": 2e-05, "batch_size": 48, "n_epochs": 50, "warmup": 0.1, "dataset_name": "food", "data_dir": "/root/data/food_jsonline", "model_name": "/root/.cache/modelscope/hub/models/AI_ModelScope/bert_base_chinese", "cnn_depth": 2, "cnn_dim": 120, "logit_drop": 0.1, "biaffine_size": 200, "n_head": 5, "seed": null, "accumulation_steps": 1, "device": 0, "refresh_cache": true, "num_workers": 2, "save_dir": "outputs/food"}}
+{"hyper": {"non_ptm_lr_ratio": "100", "schedule": "linear", "weight_decay": "1e-2", "size_embed_dim": "25", "ent_thres": "0.5", "kernel_size": "3"}}

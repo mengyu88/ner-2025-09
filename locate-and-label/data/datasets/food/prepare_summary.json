@@ -1,0 +1,66 @@
+{
+  "source": "/root/data/food_jsonline",
+  "splits": {
+    "train": {
+      "documents": 12003,
+      "tokens": 524288,
+      "entities": 20661,
+      "labels": {
+        "SNum": 4370,
+        "SN": 1112,
+        "FC": 3696,
+        "IN": 5316,
+        "IV": 5074,
+        "FN": 628,
+        "ORG": 453,
+        "PER": 12
+      },
+      "max_tokens": 160,
+      "max_entity_tokens": 156
+    },
+    "dev": {
+      "documents": 553,
+      "tokens": 30167,
+      "entities": 842,
+      "labels": {
+        "SNum": 223,
+        "FC": 383,
+        "ORG": 40,
+        "IN": 75,
+        "IV": 73,
+        "FN": 35,
+        "SN": 10,
+        "PER": 3
+      },
+      "max_tokens": 160,
+      "max_entity_tokens": 112
+    },
+    "test": {
+      "documents": 511,
+      "tokens": 28724,
+      "entities": 822,
+      "labels": {
+        "ORG": 35,
+        "SNum": 239,
+        "FN": 37,
+        "FC": 197,
+        "IN": 156,
+        "IV": 151,
+        "SN": 6,
+        "PER": 1
+      },
+      "max_tokens": 160,
+      "max_entity_tokens": 90
+    }
+  },
+  "labels": [
+    "IN",
+    "IV",
+    "FN",
+    "FC",
+    "SNum",
+    "SN",
+    "ORG",
+    "PER"
+  ]
+}

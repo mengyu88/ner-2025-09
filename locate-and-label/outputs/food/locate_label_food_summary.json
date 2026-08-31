@@ -1,0 +1,38 @@
+{
+  "run_dir": "/root/shared-nvme/projects/locate-and-label/outputs/food/logs/food_train/2026-07-03_17:11:13.926986",
+  "csv": "/root/shared-nvme/projects/locate-and-label/outputs/food/locate_label_food_epoch_entity_metrics.csv",
+  "epochs": 17,
+  "best_dev": {
+    "epoch": 17,
+    "step": "25500",
+    "dev_entity_f1": "96.73",
+    "dev_entity_precision": "96.90",
+    "dev_entity_recall": "96.56",
+    "test_entity_f1": "95.56",
+    "test_entity_precision": "96.99",
+    "test_entity_recall": "94.16",
+    "remark": "best"
+  },
+  "best_test": {
+    "epoch": 15,
+    "step": "22500",
+    "dev_entity_f1": "96.05",
+    "dev_entity_precision": "95.32",
+    "dev_entity_recall": "96.79",
+    "test_entity_f1": "96.44",
+    "test_entity_precision": "97.39",
+    "test_entity_recall": "95.50",
+    "remark": ""
+  },
+  "latest": {
+    "epoch": 17,
+    "step": "25500",
+    "dev_entity_f1": "96.73",
+    "dev_entity_precision": "96.90",
+    "dev_entity_recall": "96.56",
+    "test_entity_f1": "95.56",
+    "test_entity_precision": "96.99",
+    "test_entity_recall": "94.16",
+    "remark": "best"
+  }
+}

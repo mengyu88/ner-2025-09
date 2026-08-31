@@ -1,0 +1,6 @@
+settings,precision,recall,f1,dev_f1,selected_epoch,status,notes
+w/o SNSA+HSR,98.28,97.2,97.74,97.56,11,stopped_after_13_epochs,Partial run stopped by user; best row is among logged epochs.
+w/o SNSA,97.66,96.59,97.13,97.33,6,stopped_after_6_epochs,Partial run stopped by user; best row is among logged epochs.
+w/o HSR,94.45,97.32,95.87,96.17,9,completed_with_checkpoint_continue,"Initial run saved epoch 1, then continued from epoch-1 weights for 9 more epochs; optimizer state was reinitialized."
+w/o PGD-AT,96.48,96.72,96.6,96.99,9,completed_metric_log_partial_checkpoint_topk,"Run completed 10 epochs; fitlog metric.log contains epochs 1-2, checkpoint JSON contains saved top-k epochs 8-10."
+DiFiNet full model,98.64,97.32,97.98,97.98,15,completed,Full model baseline for ablation comparison.

@@ -1,0 +1,86 @@
+{
+  "checkpoint": "outputs/food/model.pt",
+  "rows": [
+    {
+      "entity_type": "fc",
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "tp": 197,
+      "predicted": 197,
+      "gold": 197
+    },
+    {
+      "entity_type": "fn",
+      "precision": 100.0,
+      "recall": 29.73,
+      "f1": 45.83,
+      "tp": 11,
+      "predicted": 11,
+      "gold": 37
+    },
+    {
+      "entity_type": "in",
+      "precision": 99.33,
+      "recall": 95.51,
+      "f1": 97.39,
+      "tp": 149,
+      "predicted": 150,
+      "gold": 156
+    },
+    {
+      "entity_type": "iv",
+      "precision": 100.0,
+      "recall": 97.35,
+      "f1": 98.66,
+      "tp": 147,
+      "predicted": 147,
+      "gold": 151
+    },
+    {
+      "entity_type": "org",
+      "precision": 75.0,
+      "recall": 77.14,
+      "f1": 76.06,
+      "tp": 27,
+      "predicted": 36,
+      "gold": 35
+    },
+    {
+      "entity_type": "per",
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "tp": 0,
+      "predicted": 0,
+      "gold": 1
+    },
+    {
+      "entity_type": "sn",
+      "precision": 100.0,
+      "recall": 33.33,
+      "f1": 50.0,
+      "tp": 2,
+      "predicted": 2,
+      "gold": 6
+    },
+    {
+      "entity_type": "snum",
+      "precision": 99.16,
+      "recall": 99.16,
+      "f1": 99.16,
+      "tp": 237,
+      "predicted": 239,
+      "gold": 239
+    },
+    {
+      "entity_type": "Overall",
+      "precision": 98.47,
+      "recall": 93.67,
+      "f1": 96.01,
+      "tp": 770,
+      "predicted": 782,
+      "gold": 822
+    }
+  ]
+}

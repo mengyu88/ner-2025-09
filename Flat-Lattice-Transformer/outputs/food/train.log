@@ -1,0 +1,269 @@
+Save cache to /root/shared-nvme/projects/Flat-Lattice-Transformer/cache/food_lattice_train_lexicon.
+{"args": {"data_dir": "/root/data", "output_dir": "outputs/food", "flatten_strategy": "shortest", "max_ngram_words": 1000, "ngram_min_freq": 5, "epochs": 60, "early_stop": 12, "batch_size": 16, "eval_batch_size": 16, "lr": 0.001, "embed_lr_rate": 1.0, "weight_decay": 0.0, "optimizer": "adamw", "momentum": 0.9, "seed": 11741, "lattice_dim": 100, "bigram_dim": 100, "hidden": 128, "ff": 384, "layer": 1, "head": 8, "embed_dropout": 0.5, "gaz_dropout": 0.5, "output_dropout": 0.3, "pre_dropout": 0.5, "post_dropout": 0.3, "ff_dropout": 0.3, "ff_dropout_2": 0.3, "attn_dropout": 0.0, "init": "uniform", "clip_grad_norm": 5.0, "num_buckets": 30, "limit_train": 0, "limit_dev": 0, "limit_test": 0, "print_every": 100}, "device": "cuda", "torch": "2.3.0+cu121", "cuda_available": true, "labels": ["O", "M-IV", "M-SNum", "M-IN", "M-FC", "M-SN", "B-IN", "E-IN", "B-IV", "E-IV", "B-SNum", "E-SNum", "M-ORG", "B-FC", "E-FC", "M-FN", "B-FN", "E-FN", "B-SN", "E-SN", "B-ORG", "E-ORG", "S-IN", "S-IV", "M-PER", "B-PER", "E-PER", "S-FN"], "data_summary": {"source_dir": "/root/data/food_jsonline", "out_dir": "/root/shared-nvme/projects/Flat-Lattice-Transformer/data/food", "flatten_strategy": "shortest", "lexicon_size": 10073, "splits": {"train": {"sentences": 12003, "entities_all": 20661, "entities_dropped_for_flat_tags": 858, "max_len": 160}, "dev": {"sentences": 553, "entities_all": 842, "entities_dropped_for_flat_tags": 5, "max_len": 160}, "test": {"sentences": 511, "entities_all": 822, "entities_dropped_for_flat_tags": 2, "max_len": 160}}}, "vocab_sizes": {"char": 2249, "bigram": 45584, "lattice": 12320, "label": 28}, "max_seq_len": 160, "max_seq_lex_len": 449, "effective_train_size": 12003, "effective_dev_size": 553, "effective_test_size": 511}
+/root/.conda/envs/difinet/lib/python3.10/site-packages/torch/utils/data/sampler.py:64: UserWarning: `data_source` argument is not used and will be removed in 2.2.0.You may still have custom implementation that utilizes it.
+  warnings.warn("`data_source` argument is not used and will be removed in 2.2.0."
+epoch=1 batch=100/751 loss=43.9177
+epoch=1 batch=200/751 loss=27.8520
+epoch=1 batch=300/751 loss=20.6644
+epoch=1 batch=400/751 loss=16.8848
+epoch=1 batch=500/751 loss=14.3629
+epoch=1 batch=600/751 loss=12.4531
+epoch=1 batch=700/751 loss=11.0953
+epoch=1 loss=10.5455 dev_f1=72.18 test_f1=70.31 dev_flat_f1=72.46 test_flat_f1=70.38 best
+epoch=2 batch=100/751 loss=1.6474
+epoch=2 batch=200/751 loss=1.7678
+epoch=2 batch=300/751 loss=1.8051
+epoch=2 batch=400/751 loss=1.8070
+epoch=2 batch=500/751 loss=1.6720
+epoch=2 batch=600/751 loss=1.6234
+epoch=2 batch=700/751 loss=1.5360
+epoch=2 loss=1.4836 dev_f1=75.77 test_f1=69.58 dev_flat_f1=76.04 test_flat_f1=69.65 best
+epoch=3 batch=100/751 loss=0.7592
+epoch=3 batch=200/751 loss=0.7900
+epoch=3 batch=300/751 loss=0.7921
+epoch=3 batch=400/751 loss=0.7627
+epoch=3 batch=500/751 loss=0.7192
+epoch=3 batch=600/751 loss=0.7150
+epoch=3 batch=700/751 loss=0.7030
+epoch=3 loss=0.7198 dev_f1=77.46 test_f1=69.09 dev_flat_f1=77.74 test_flat_f1=69.16 best
+epoch=4 batch=100/751 loss=0.3913
+epoch=4 batch=200/751 loss=0.3307
+epoch=4 batch=300/751 loss=0.3470
+epoch=4 batch=400/751 loss=0.3374
+epoch=4 batch=500/751 loss=0.3361
+epoch=4 batch=600/751 loss=0.3536
+epoch=4 batch=700/751 loss=0.3598
+epoch=4 loss=0.3479 dev_f1=76.75 test_f1=66.82 dev_flat_f1=77.03 test_flat_f1=66.88 
+epoch=5 batch=100/751 loss=0.3457
+epoch=5 batch=200/751 loss=0.2922
+epoch=5 batch=300/751 loss=0.2424
+epoch=5 batch=400/751 loss=0.2364
+epoch=5 batch=500/751 loss=0.2254
+epoch=5 batch=600/751 loss=0.2176
+epoch=5 batch=700/751 loss=0.2215
+epoch=5 loss=0.2252 dev_f1=84.38 test_f1=82.23 dev_flat_f1=84.71 test_flat_f1=82.31 best
+epoch=6 batch=100/751 loss=0.1285
+epoch=6 batch=200/751 loss=0.1381
+epoch=6 batch=300/751 loss=0.1525
+epoch=6 batch=400/751 loss=0.1413
+epoch=6 batch=500/751 loss=0.1387
+epoch=6 batch=600/751 loss=0.1436
+epoch=6 batch=700/751 loss=0.1471
+epoch=6 loss=0.1441 dev_f1=83.54 test_f1=79.91 dev_flat_f1=83.87 test_flat_f1=80.00 
+epoch=7 batch=100/751 loss=0.0648
+epoch=7 batch=200/751 loss=0.0591
+epoch=7 batch=300/751 loss=0.0818
+epoch=7 batch=400/751 loss=0.1030
+epoch=7 batch=500/751 loss=0.1014
+epoch=7 batch=600/751 loss=0.1010
+epoch=7 batch=700/751 loss=0.0971
+epoch=7 loss=0.0932 dev_f1=84.41 test_f1=74.28 dev_flat_f1=84.75 test_flat_f1=74.35 best
+epoch=8 batch=100/751 loss=0.0636
+epoch=8 batch=200/751 loss=0.0896
+epoch=8 batch=300/751 loss=0.0801
+epoch=8 batch=400/751 loss=0.0848
+epoch=8 batch=500/751 loss=0.0879
+epoch=8 batch=600/751 loss=0.0882
+epoch=8 batch=700/751 loss=0.0858
+epoch=8 loss=0.0871 dev_f1=86.15 test_f1=68.35 dev_flat_f1=86.51 test_flat_f1=68.42 best
+epoch=9 batch=100/751 loss=0.0631
+epoch=9 batch=200/751 loss=0.0778
+epoch=9 batch=300/751 loss=0.0691
+epoch=9 batch=400/751 loss=0.0683
+epoch=9 batch=500/751 loss=0.0651
+epoch=9 batch=600/751 loss=0.0660
+epoch=9 batch=700/751 loss=0.0719
+epoch=9 loss=0.0731 dev_f1=86.61 test_f1=77.66 dev_flat_f1=86.96 test_flat_f1=77.74 best
+epoch=10 batch=100/751 loss=0.0764
+epoch=10 batch=200/751 loss=0.0654
+epoch=10 batch=300/751 loss=0.0560
+epoch=10 batch=400/751 loss=0.0489
+epoch=10 batch=500/751 loss=0.0491
+epoch=10 batch=600/751 loss=0.0536
+epoch=10 batch=700/751 loss=0.0556
+epoch=10 loss=0.0558 dev_f1=82.03 test_f1=72.67 dev_flat_f1=82.37 test_flat_f1=72.75 
+epoch=11 batch=100/751 loss=0.0965
+epoch=11 batch=200/751 loss=0.0748
+epoch=11 batch=300/751 loss=0.0751
+epoch=11 batch=400/751 loss=0.0704
+epoch=11 batch=500/751 loss=0.0651
+epoch=11 batch=600/751 loss=0.0775
+epoch=11 batch=700/751 loss=0.0792
+epoch=11 loss=0.0769 dev_f1=82.97 test_f1=72.77 dev_flat_f1=83.29 test_flat_f1=72.84 
+epoch=12 batch=100/751 loss=0.0431
+epoch=12 batch=200/751 loss=0.0353
+epoch=12 batch=300/751 loss=0.0431
+epoch=12 batch=400/751 loss=0.0495
+epoch=12 batch=500/751 loss=0.0543
+epoch=12 batch=600/751 loss=0.0520
+epoch=12 batch=700/751 loss=0.0504
+epoch=12 loss=0.0528 dev_f1=83.98 test_f1=69.76 dev_flat_f1=84.32 test_flat_f1=69.83 
+epoch=13 batch=100/751 loss=0.0265
+epoch=13 batch=200/751 loss=0.0363
+epoch=13 batch=300/751 loss=0.0449
+epoch=13 batch=400/751 loss=0.0411
+epoch=13 batch=500/751 loss=0.0414
+epoch=13 batch=600/751 loss=0.0460
+epoch=13 batch=700/751 loss=0.0429
+epoch=13 loss=0.0437 dev_f1=88.94 test_f1=81.89 dev_flat_f1=89.30 test_flat_f1=81.98 best
+epoch=14 batch=100/751 loss=0.0517
+epoch=14 batch=200/751 loss=0.0754
+epoch=14 batch=300/751 loss=0.0647
+epoch=14 batch=400/751 loss=0.0612
+epoch=14 batch=500/751 loss=0.0545
+epoch=14 batch=600/751 loss=0.0532
+epoch=14 batch=700/751 loss=0.0498
+epoch=14 loss=0.0490 dev_f1=76.43 test_f1=71.30 dev_flat_f1=76.73 test_flat_f1=71.37 
+epoch=15 batch=100/751 loss=0.0511
+epoch=15 batch=200/751 loss=0.0420
+epoch=15 batch=300/751 loss=0.0478
+epoch=15 batch=400/751 loss=0.0410
+epoch=15 batch=500/751 loss=0.0371
+epoch=15 batch=600/751 loss=0.0415
+epoch=15 batch=700/751 loss=0.0389
+epoch=15 loss=0.0374 dev_f1=81.06 test_f1=61.01 dev_flat_f1=81.38 test_flat_f1=61.06 
+epoch=16 batch=100/751 loss=0.0176
+epoch=16 batch=200/751 loss=0.0261
+epoch=16 batch=300/751 loss=0.0280
+epoch=16 batch=400/751 loss=0.0274
+epoch=16 batch=500/751 loss=0.0304
+epoch=16 batch=600/751 loss=0.0373
+epoch=16 batch=700/751 loss=0.0409
+epoch=16 loss=0.0462 dev_f1=83.24 test_f1=75.80 dev_flat_f1=83.57 test_flat_f1=75.88 
+epoch=17 batch=100/751 loss=0.0360
+epoch=17 batch=200/751 loss=0.0385
+epoch=17 batch=300/751 loss=0.0370
+epoch=17 batch=400/751 loss=0.0333
+epoch=17 batch=500/751 loss=0.0344
+epoch=17 batch=600/751 loss=0.0344
+epoch=17 batch=700/751 loss=0.0396
+epoch=17 loss=0.0415 dev_f1=87.77 test_f1=71.79 dev_flat_f1=88.15 test_flat_f1=71.87 
+epoch=18 batch=100/751 loss=0.0314
+epoch=18 batch=200/751 loss=0.0348
+epoch=18 batch=300/751 loss=0.0419
+epoch=18 batch=400/751 loss=0.0375
+epoch=18 batch=500/751 loss=0.0393
+epoch=18 batch=600/751 loss=0.0357
+epoch=18 batch=700/751 loss=0.0396
+epoch=18 loss=0.0392 dev_f1=86.07 test_f1=75.80 dev_flat_f1=86.42 test_flat_f1=75.88 
+epoch=19 batch=100/751 loss=0.0394
+epoch=19 batch=200/751 loss=0.0263
+epoch=19 batch=300/751 loss=0.0251
+epoch=19 batch=400/751 loss=0.0275
+epoch=19 batch=500/751 loss=0.0297
+epoch=19 batch=600/751 loss=0.0307
+epoch=19 batch=700/751 loss=0.0301
+epoch=19 loss=0.0292 dev_f1=89.18 test_f1=83.08 dev_flat_f1=89.56 test_flat_f1=83.18 best
+epoch=20 batch=100/751 loss=0.0091
+epoch=20 batch=200/751 loss=0.0153
+epoch=20 batch=300/751 loss=0.0163
+epoch=20 batch=400/751 loss=0.0193
+epoch=20 batch=500/751 loss=0.0218
+epoch=20 batch=600/751 loss=0.0251
+epoch=20 batch=700/751 loss=0.0230
+epoch=20 loss=0.0228 dev_f1=80.22 test_f1=53.57 dev_flat_f1=80.54 test_flat_f1=53.61 
+epoch=21 batch=100/751 loss=0.0347
+epoch=21 batch=200/751 loss=0.0261
+epoch=21 batch=300/751 loss=0.0232
+epoch=21 batch=400/751 loss=0.0221
+epoch=21 batch=500/751 loss=0.0245
+epoch=21 batch=600/751 loss=0.0223
+epoch=21 batch=700/751 loss=0.0215
+epoch=21 loss=0.0233 dev_f1=89.64 test_f1=84.51 dev_flat_f1=90.01 test_flat_f1=84.61 best
+epoch=22 batch=100/751 loss=0.0212
+epoch=22 batch=200/751 loss=0.0227
+epoch=22 batch=300/751 loss=0.0221
+epoch=22 batch=400/751 loss=0.0198
+epoch=22 batch=500/751 loss=0.0250
+epoch=22 batch=600/751 loss=0.0270
+epoch=22 batch=700/751 loss=0.0284
+epoch=22 loss=0.0289 dev_f1=91.53 test_f1=77.48 dev_flat_f1=91.92 test_flat_f1=77.56 best
+epoch=23 batch=100/751 loss=0.0289
+epoch=23 batch=200/751 loss=0.0297
+epoch=23 batch=300/751 loss=0.0240
+epoch=23 batch=400/751 loss=0.0216
+epoch=23 batch=500/751 loss=0.0268
+epoch=23 batch=600/751 loss=0.0300
+epoch=23 batch=700/751 loss=0.0295
+epoch=23 loss=0.0284 dev_f1=85.76 test_f1=68.17 dev_flat_f1=86.13 test_flat_f1=68.24 
+epoch=24 batch=100/751 loss=0.0352
+epoch=24 batch=200/751 loss=0.0262
+epoch=24 batch=300/751 loss=0.0276
+epoch=24 batch=400/751 loss=0.0229
+epoch=24 batch=500/751 loss=0.0233
+epoch=24 batch=600/751 loss=0.0263
+epoch=24 batch=700/751 loss=0.0256
+epoch=24 loss=0.0283 dev_f1=88.40 test_f1=76.85 dev_flat_f1=88.77 test_flat_f1=76.94 
+epoch=25 batch=100/751 loss=0.0214
+epoch=25 batch=200/751 loss=0.0176
+epoch=25 batch=300/751 loss=0.0255
+epoch=25 batch=400/751 loss=0.0212
+epoch=25 batch=500/751 loss=0.0200
+epoch=25 batch=600/751 loss=0.0192
+epoch=25 batch=700/751 loss=0.0183
+epoch=25 loss=0.0178 dev_f1=88.18 test_f1=79.68 dev_flat_f1=88.56 test_flat_f1=79.77 
+epoch=26 batch=100/751 loss=0.0247
+epoch=26 batch=200/751 loss=0.0174
+epoch=26 batch=300/751 loss=0.0158
+epoch=26 batch=400/751 loss=0.0203
+epoch=26 batch=500/751 loss=0.0192
+epoch=26 batch=600/751 loss=0.0215
+epoch=26 batch=700/751 loss=0.0210
+epoch=26 loss=0.0200 dev_f1=90.04 test_f1=77.90 dev_flat_f1=90.43 test_flat_f1=77.99 
+epoch=27 batch=100/751 loss=0.0196
+epoch=27 batch=200/751 loss=0.0178
+epoch=27 batch=300/751 loss=0.0177
+epoch=27 batch=400/751 loss=0.0203
+epoch=27 batch=500/751 loss=0.0231
+epoch=27 batch=600/751 loss=0.0258
+epoch=27 batch=700/751 loss=0.0252
+epoch=27 loss=0.0249 dev_f1=85.49 test_f1=77.58 dev_flat_f1=85.87 test_flat_f1=77.67 
+epoch=28 batch=100/751 loss=0.0301
+epoch=28 batch=200/751 loss=0.0228
+epoch=28 batch=300/751 loss=0.0220
+epoch=28 batch=400/751 loss=0.0209
+epoch=28 batch=500/751 loss=0.0190
+epoch=28 batch=600/751 loss=0.0179
+epoch=28 batch=700/751 loss=0.0172
+epoch=28 loss=0.0190 dev_f1=88.14 test_f1=78.03 dev_flat_f1=88.50 test_flat_f1=78.12 
+epoch=29 batch=100/751 loss=0.0094
+epoch=29 batch=200/751 loss=0.0120
+epoch=29 batch=300/751 loss=0.0154
+epoch=29 batch=400/751 loss=0.0185
+epoch=29 batch=500/751 loss=0.0187
+epoch=29 batch=600/751 loss=0.0184
+epoch=29 batch=700/751 loss=0.0178
+epoch=29 loss=0.0172 dev_f1=88.04 test_f1=78.26 dev_flat_f1=88.42 test_flat_f1=78.35 
+epoch=30 batch=100/751 loss=0.0627
+epoch=30 batch=200/751 loss=0.0491
+epoch=30 batch=300/751 loss=0.0370
+epoch=30 batch=400/751 loss=0.0327
+epoch=30 batch=500/751 loss=0.0295
+epoch=30 batch=600/751 loss=0.0267
+epoch=30 batch=700/751 loss=0.0290
+epoch=30 loss=0.0279 dev_f1=85.63 test_f1=70.75 dev_flat_f1=86.00 test_flat_f1=70.83 
+epoch=31 batch=100/751 loss=0.0108
+epoch=31 batch=200/751 loss=0.0105
+epoch=31 batch=300/751 loss=0.0124
+epoch=31 batch=400/751 loss=0.0162
+epoch=31 batch=500/751 loss=0.0176
+epoch=31 batch=600/751 loss=0.0155
+epoch=31 batch=700/751 loss=0.0168
+epoch=31 loss=0.0160 dev_f1=87.57 test_f1=75.48 dev_flat_f1=87.94 test_flat_f1=75.56 
+epoch=32 batch=100/751 loss=0.0307
+epoch=32 batch=200/751 loss=0.0215
+epoch=32 batch=300/751 loss=0.0215
+epoch=32 batch=400/751 loss=0.0188
+epoch=32 batch=500/751 loss=0.0188
+epoch=32 batch=600/751 loss=0.0192
+epoch=32 batch=700/751 loss=0.0207
+epoch=32 loss=0.0222 dev_f1=86.17 test_f1=76.50 dev_flat_f1=86.55 test_flat_f1=76.59 
+epoch=33 batch=100/751 loss=0.0111
+epoch=33 batch=200/751 loss=0.0080
+epoch=33 batch=300/751 loss=0.0109
+epoch=33 batch=400/751 loss=0.0132
+epoch=33 batch=500/751 loss=0.0142
+epoch=33 batch=600/751 loss=0.0190
+epoch=33 batch=700/751 loss=0.0182
+epoch=33 loss=0.0174 dev_f1=90.67 test_f1=83.97 dev_flat_f1=91.06 test_flat_f1=84.07 
+epoch=34 batch=100/751 loss=0.0214

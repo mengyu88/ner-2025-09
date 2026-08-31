@@ -1,0 +1,7 @@
+setting,module_status,source,phase,epoch,cumulative_epoch,step,dev_precision,dev_recall,dev_f1,test_precision,test_recall,test_f1,metric_source,log_or_checkpoint
+w/o SNSA,SNSA=off; HSR=on; PGD-AT=on,metric_log,single_run_partial,1,1,3001,77.04,96.44,85.65,79.28,93.55,85.83,fitlog_metric_log,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_204332/metric.log
+w/o SNSA,SNSA=off; HSR=on; PGD-AT=on,metric_log,single_run_partial,2,2,6002,93.01,96.44,94.69,89.7,93.19,91.41,fitlog_metric_log,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_204332/metric.log
+w/o SNSA,SNSA=off; HSR=on; PGD-AT=on,metric_log,single_run_partial,3,3,9003,96.79,96.79,96.79,95.77,93.55,94.65,fitlog_metric_log,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_204332/metric.log
+w/o SNSA,SNSA=off; HSR=on; PGD-AT=on,metric_log,single_run_partial,4,4,12004,97.49,96.91,97.2,96.44,95.5,95.97,fitlog_metric_log,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_204332/metric.log
+w/o SNSA,SNSA=off; HSR=on; PGD-AT=on,metric_log,single_run_partial,5,5,15005,97.61,97.03,97.32,97.99,95.01,96.48,fitlog_metric_log,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_204332/metric.log
+w/o SNSA,SNSA=off; HSR=on; PGD-AT=on,metric_log,single_run_partial,6,6,18006,97.38,97.27,97.33,97.66,96.59,97.13,fitlog_metric_log,/root/shared-nvme/projects/difinet/ner-2025-05/logs/log_20260704_204332/metric.log

@@ -1,0 +1,88 @@
+{
+  "labels": [
+    "O",
+    "S-IN",
+    "B-IN",
+    "I-IN",
+    "E-IN",
+    "S-IV",
+    "B-IV",
+    "I-IV",
+    "E-IV",
+    "S-FN",
+    "B-FN",
+    "I-FN",
+    "E-FN",
+    "S-FC",
+    "B-FC",
+    "I-FC",
+    "E-FC",
+    "S-SNum",
+    "B-SNum",
+    "I-SNum",
+    "E-SNum",
+    "S-SN",
+    "B-SN",
+    "I-SN",
+    "E-SN",
+    "S-ORG",
+    "B-ORG",
+    "I-ORG",
+    "E-ORG",
+    "S-PER",
+    "B-PER",
+    "I-PER",
+    "E-PER"
+  ],
+  "splits": {
+    "train": {
+      "samples": 12003,
+      "max_len": 160,
+      "avg_len": 43.67974672998417,
+      "entity_counts": {
+        "SNum": 4370,
+        "SN": 1112,
+        "FC": 3696,
+        "IN": 5316,
+        "IV": 5074,
+        "FN": 628,
+        "ORG": 453,
+        "PER": 12
+      },
+      "skipped_overlapping_or_invalid_entities": 1472
+    },
+    "dev": {
+      "samples": 553,
+      "max_len": 160,
+      "avg_len": 54.55153707052441,
+      "entity_counts": {
+        "SNum": 223,
+        "FC": 383,
+        "ORG": 40,
+        "IN": 75,
+        "IV": 73,
+        "FN": 35,
+        "SN": 10,
+        "PER": 3
+      },
+      "skipped_overlapping_or_invalid_entities": 7
+    },
+    "test": {
+      "samples": 511,
+      "max_len": 160,
+      "avg_len": 56.211350293542075,
+      "entity_counts": {
+        "ORG": 35,
+        "SNum": 239,
+        "FN": 37,
+        "FC": 197,
+        "IN": 156,
+        "IV": 151,
+        "SN": 6,
+        "PER": 1
+      },
+      "skipped_overlapping_or_invalid_entities": 3
+    }
+  },
+  "lexicon_words": 50000
+}

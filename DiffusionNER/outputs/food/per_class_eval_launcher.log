@@ -1,0 +1,130 @@
+--------------------------------------------------
+Config:
+Namespace(dataset_path='/root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json', repeat_gt_entities=-1, config='configs/food_per_class_eval.conf', local_rank=-1, world_size=-1, types_path='/root/shared-nvme/projects/DiffusionNER/data/datasets/food/food_types.json', tokenizer_path='/root/.cache/modelscope/hub/AI-ModelScope/bert-base-chinese', lowercase=False, sampling_processes=4, label='food_per_class_eval', log_path='/root/shared-nvme/projects/DiffusionNER/outputs/food/per_class_eval_logs', store_predictions=True, store_examples=False, example_count=None, debug=False, save_code=False, lstm_layers=2, span_attn_layers=2, wo_self_attn=False, wo_cross_attn=False, split_epoch=10, stage_one_lr_scale=1.0, prop_drop=0.1, soi_pooling='lrconcat', pos_type='sine', num_proposals=60, sampling_timesteps=5, beta_schedule='cosine', timesteps=1000, step_embed_type='add', sample_dist_type='normal', scale=1.0, extand_noise_spans='concat', span_renewal=False, step_ensemble=False, device_id=-1, model_path='/root/shared-nvme/projects/DiffusionNER/outputs/food/checkpoints/food_train/2026-07-03_22:39:06.171418/best_model', model_type='diffusionner', cpu=False, eval_batch_size=32, pool_type='max', no_overlapping=False, no_partial_overlapping=True, no_duplicate=False, boundary_threshold=0.0, cls_threshold=0.0, entity_threshold=2.5, seed=488, cache_path=None)
+Repeat 1 times
+--------------------------------------------------
+Iteration 0
+--------------------------------------------------
+{0: 13251}
+Avaliable devices:  [0, 0]
+########### Using GPU Normal Training ###########
+Using devices:  0
+Using Random Seed 488
+2026-08-16 17:24:37,289 [MainThread  ] [INFO ]  {
+    "beta_schedule": "cosine",
+    "boundary_threshold": 0.0,
+    "cache_path": null,
+    "cls_threshold": 0.0,
+    "config": "configs/food_per_class_eval.conf",
+    "cpu": false,
+    "dataset_path": "/root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json",
+    "debug": false,
+    "device_id": 0,
+    "entity_threshold": 2.5,
+    "eval_batch_size": 32,
+    "example_count": null,
+    "extand_noise_spans": "concat",
+    "label": "food_per_class_eval",
+    "local_rank": -1,
+    "log_path": "/root/shared-nvme/projects/DiffusionNER/outputs/food/per_class_eval_logs",
+    "lowercase": false,
+    "lstm_layers": 2,
+    "model_path": "/root/shared-nvme/projects/DiffusionNER/outputs/food/checkpoints/food_train/2026-07-03_22:39:06.171418/best_model",
+    "model_type": "diffusionner",
+    "no_duplicate": false,
+    "no_overlapping": false,
+    "no_partial_overlapping": true,
+    "num_proposals": 60,
+    "pool_type": "max",
+    "pos_type": "sine",
+    "prop_drop": 0.1,
+    "repeat_gt_entities": -1,
+    "sample_dist_type": "normal",
+    "sampling_processes": 4,
+    "sampling_timesteps": 5,
+    "save_code": false,
+    "scale": 1.0,
+    "seed": 488,
+    "soi_pooling": "lrconcat",
+    "span_attn_layers": 2,
+    "span_renewal": false,
+    "split_epoch": 10,
+    "stage_one_lr_scale": 1.0,
+    "step_embed_type": "add",
+    "step_ensemble": false,
+    "store_examples": false,
+    "store_predictions": true,
+    "timesteps": 1000,
+    "tokenizer_path": "/root/.cache/modelscope/hub/AI-ModelScope/bert-base-chinese",
+    "types_path": "/root/shared-nvme/projects/DiffusionNER/data/datasets/food/food_types.json",
+    "wo_cross_attn": false,
+    "wo_self_attn": false,
+    "world_size": -1
+}
+2026-08-16 17:24:37,290 [MainThread  ] [INFO ]  Dataset: /root/shared-nvme/projects/locate-and-label/data/datasets/food/test_context.json
+2026-08-16 17:24:37,290 [MainThread  ] [INFO ]  Model: diffusionner
+Parse dataset 'test':   0%|          | 0/511 [00:00<?, ?it/s]Parse dataset 'test':   5%|▍         | 25/511 [00:00<00:01, 248.49it/s]Parse dataset 'test':  10%|▉         | 50/511 [00:00<00:01, 242.34it/s]Parse dataset 'test':  16%|█▌        | 81/511 [00:00<00:01, 270.24it/s]Parse dataset 'test':  24%|██▎       | 121/511 [00:00<00:01, 319.20it/s]Parse dataset 'test':  33%|███▎      | 167/511 [00:00<00:00, 363.77it/s]Parse dataset 'test':  41%|████▏     | 212/511 [00:00<00:00, 392.10it/s]Parse dataset 'test':  49%|████▉     | 252/511 [00:00<00:00, 392.12it/s]Parse dataset 'test':  57%|█████▋    | 292/511 [00:00<00:00, 327.36it/s]Parse dataset 'test':  64%|██████▍   | 327/511 [00:00<00:00, 319.36it/s]Parse dataset 'test':  71%|███████   | 361/511 [00:01<00:00, 305.81it/s]Parse dataset 'test':  77%|███████▋  | 393/511 [00:01<00:00, 302.67it/s]Parse dataset 'test':  85%|████████▍ | 433/511 [00:01<00:00, 326.18it/s]Parse dataset 'test':  96%|█████████▌| 489/511 [00:01<00:00, 389.53it/s]Parse dataset 'test': 100%|██████████| 511/511 [00:01<00:00, 340.72it/s]
+2026-08-16 17:24:38,817 [MainThread  ] [INFO ]  Entity type count: 9
+2026-08-16 17:24:38,817 [MainThread  ] [INFO ]  Entities:
+2026-08-16 17:24:38,817 [MainThread  ] [INFO ]  No Entity=0
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  IN=1
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  IV=2
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  FN=3
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  FC=4
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  SNum=5
+2026-08-16 17:24:38,818 [MainThread  ] [INFO ]  SN=6
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  ORG=7
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  PER=8
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Dataset: test
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Document count: 511
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Entity count: 822
+2026-08-16 17:24:38,819 [MainThread  ] [INFO ]  Context size: 161
+2026-08-16 17:24:39,845 [MainThread  ] [INFO ]  Freeze bert weights from begining
+2026-08-16 17:24:39,845 [MainThread  ] [INFO ]  Freeze transformer weights
+Some weights of the model checkpoint at /root/shared-nvme/projects/DiffusionNER/outputs/food/checkpoints/food_train/2026-07-03_22:39:06.171418/best_model were not used when initializing BertDiffusionNER: ['biass']
+- This IS expected if you are initializing BertDiffusionNER from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertDiffusionNER from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertDiffusionNER were not initialized from the model checkpoint at /root/shared-nvme/projects/DiffusionNER/outputs/food/checkpoints/food_train/2026-07-03_22:39:06.171418/best_model and are newly initialized: ['betas']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2026-08-16 17:24:40,497 [MainThread  ] [INFO ]  Evaluate: test
+Evaluate epoch 0:   0%|          | 0/16 [00:00<?, ?it/s]Evaluate epoch 0:   6%|▋         | 1/16 [00:03<00:51,  3.42s/it]Evaluate epoch 0:  12%|█▎        | 2/16 [00:06<00:43,  3.14s/it]Evaluate epoch 0:  19%|█▉        | 3/16 [00:08<00:35,  2.72s/it]Evaluate epoch 0:  25%|██▌       | 4/16 [00:10<00:29,  2.44s/it]Evaluate epoch 0:  31%|███▏      | 5/16 [00:12<00:23,  2.13s/it]Evaluate epoch 0:  38%|███▊      | 6/16 [00:14<00:21,  2.13s/it]Evaluate epoch 0:  44%|████▍     | 7/16 [00:15<00:16,  1.86s/it]Evaluate epoch 0:  50%|█████     | 8/16 [00:17<00:15,  1.88s/it]Evaluate epoch 0:  56%|█████▋    | 9/16 [00:20<00:15,  2.21s/it]Evaluate epoch 0:  62%|██████▎   | 10/16 [00:22<00:12,  2.12s/it]Evaluate epoch 0:  69%|██████▉   | 11/16 [00:25<00:11,  2.40s/it]Evaluate epoch 0:  75%|███████▌  | 12/16 [00:27<00:09,  2.42s/it]Evaluate epoch 0:  81%|████████▏ | 13/16 [00:29<00:06,  2.32s/it]Evaluate epoch 0:  88%|████████▊ | 14/16 [00:32<00:04,  2.32s/it]Evaluate epoch 0:  94%|█████████▍| 15/16 [00:33<00:02,  2.06s/it]Evaluate epoch 0: 100%|██████████| 16/16 [00:35<00:00,  2.00s/it]Evaluate epoch 0: 100%|██████████| 16/16 [00:35<00:00,  2.23s/it]
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  Evaluation
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  --- NER ---
+2026-08-16 17:25:16,189 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                  type    precision       recall     f1-score      support
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                   PER         0.00         0.00         0.00            1
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                   ORG        69.77        85.71        76.92           35
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                    IN        99.33        94.87        97.05          156
+2026-08-16 17:25:16,213 [MainThread  ] [INFO ]                    SN       100.00        16.67        28.57            6
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                    IV       100.00        96.69        98.32          151
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                  SNum        95.79        85.77        90.51          239
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                    FC        93.07        95.43        94.24          197
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                    FN       100.00         2.70         5.26           37
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,214 [MainThread  ] [INFO ]                 micro        95.11        87.47        91.13          822
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]                 macro        82.25        59.73        61.36          822
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]  --- NER on Localization ---
+2026-08-16 17:25:16,215 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,234 [MainThread  ] [INFO ]                  type    precision       recall     f1-score      support
+2026-08-16 17:25:16,234 [MainThread  ] [INFO ]                Entity        97.47        89.17        93.14          822
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]                 micro        97.47        89.17        93.14          822
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]                 macro        97.47        89.17        93.14          822
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,235 [MainThread  ] [INFO ]  --- NER on Classification ---
+2026-08-16 17:25:16,236 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,250 [MainThread  ] [INFO ]                  type    precision       recall     f1-score      support
+2026-08-16 17:25:16,250 [MainThread  ] [INFO ]                   PER         0.00         0.00         0.00            1
+2026-08-16 17:25:16,250 [MainThread  ] [INFO ]                   ORG        83.33        85.71        84.51           35
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    IN       100.00        94.87        97.37          156
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    SN       100.00        16.67        28.57            6
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    IV       100.00        96.69        98.32          151
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                  SNum        99.51        85.77        92.13          239
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    FC        94.47        95.43        94.95          197
+2026-08-16 17:25:16,251 [MainThread  ] [INFO ]                    FN       100.00         2.70         5.26           37
+2026-08-16 17:25:16,252 [MainThread  ] [INFO ]  
+2026-08-16 17:25:16,252 [MainThread  ] [INFO ]                 micro        97.56        87.47        92.24          822
+2026-08-16 17:25:16,252 [MainThread  ] [INFO ]                 macro        84.67        59.73        62.64          822
+2026-08-16 17:25:17,846 [MainThread  ] [INFO ]  Logged in: /root/shared-nvme/projects/DiffusionNER/outputs/food/per_class_eval_logs/food_per_class_eval/2026-08-16_17:24:37.175399

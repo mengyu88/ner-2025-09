@@ -1,0 +1,14 @@
+Collecting scikit-learn
+  Using cached scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Requirement already satisfied: numpy>=1.22.0 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from scikit-learn) (1.23.5)
+Requirement already satisfied: scipy>=1.8.0 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from scikit-learn) (1.15.3)
+Requirement already satisfied: joblib>=1.2.0 in /root/.conda/envs/difinet/lib/python3.10/site-packages (from scikit-learn) (1.5.3)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 16.4 kB/s  0:10:18
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Installing collected packages: threadpoolctl, scikit-learn
+
+Successfully installed scikit-learn-1.7.2 threadpoolctl-3.6.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

@@ -1,0 +1,10 @@
+{
+  "W": 51240,
+  "pretrain_model": 102267648,
+  "size_embedding": 750,
+  "head_mlp": 153800,
+  "tail_mlp": 153800,
+  "multi_head_biaffine": 192000,
+  "cnn": 389280,
+  "down_fc": 968
+}

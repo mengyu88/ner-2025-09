@@ -1,0 +1,32 @@
+Create logging folder in `outputs/food/logs`.
+dev:   0%|          | 0/553 [00:00<?, ?it/s]dev:  72%|███████▏  | 397/553 [00:00<00:00, 3967.56it/s]                                                        test:   0%|          | 0/511 [00:00<?, ?it/s]                                             train:   0%|          | 0/12003 [00:00<?, ?it/s]train:   6%|▌         | 700/12003 [00:00<00:01, 6993.79it/s]train:  12%|█▏        | 1400/12003 [00:00<00:02, 4037.40it/s]train:  18%|█▊        | 2170/12003 [00:00<00:01, 5232.05it/s]train:  24%|██▍       | 2924/12003 [00:00<00:01, 5965.76it/s]train:  31%|███       | 3671/12003 [00:00<00:01, 6435.29it/s]train:  37%|███▋      | 4396/12003 [00:00<00:01, 6685.11it/s]train:  43%|████▎     | 5118/12003 [00:00<00:01, 6847.30it/s]train:  49%|████▉     | 5891/12003 [00:00<00:00, 7113.52it/s]train:  55%|█████▌    | 6653/12003 [00:01<00:00, 7262.62it/s]train:  62%|██████▏   | 7417/12003 [00:01<00:00, 7374.97it/s]train:  68%|██████▊   | 8164/12003 [00:01<00:00, 7369.39it/s]train:  74%|███████▍  | 8908/12003 [00:01<00:00, 7383.45it/s]train:  80%|████████  | 9652/12003 [00:01<00:00, 7399.26it/s]train:  87%|████████▋ | 10401/12003 [00:01<00:00, 7425.23it/s]train:  93%|█████████▎| 11162/12003 [00:01<00:00, 7475.18it/s]train:  99%|█████████▉| 11912/12003 [00:01<00:00, 7471.97it/s]                                                              [12:08:54] INFO     Save cache to /root/shared-nvme/project cache_results.py:343
+                    s/CNN_Nested_NER/caches/84d88315_ner_ca                     
+                    ches.pkl.                                                   
+           INFO     In total 3 datasets:                            train.py:109
+                            dev has 553 instances.                              
+                            test has 511 instances.                             
+                            train has 12003 instances.                          
+                                                                                
+           INFO     8 labels: {'FC': 0, 'FN': 1, 'IN': 2, 'IV': 3,  train.py:111
+                    'ORG': 4, 'PER': 5, 'SN': 6, 'SNum': 7},                    
+                    matrix_segs:{'ent': 8}                                      
+Some weights of the model checkpoint at /root/.cache/modelscope/hub/models/AI-ModelScope/bert-base-chinese were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[12:08:56] INFO     Counter({'pretrain_model': 102267648, 'cnn':    train.py:145
+                    389280, 'multi_head_biaffine': 192000,                      
+                    'head_mlp': 153800, 'tail_mlp': 153800, 'W':                
+                    51240, 'down_fc': 968, 'size_embedding': 750})              
+           INFO     Total param  103209486                          train.py:146
+           INFO     The checkpoint will be saved in this folder topk_saver.py:54
+                    for this time: outputs/food/checkpoints/202                 
+                    6-07-03-12_08_49_362629.                                    
+[12:08:57] INFO     Running evaluator sanity check for 1 batches. trainer.py:661
+[12:40:36] INFO     The best performance for monitor     progress_callback.py:37
+                    f#f#dev:98.03 was achieved in                               
+                    Epoch:45, Global Batch:11295. The                           
+                    evaluation result:                                          
+                    {'f#f#dev': 98.03, 'rec#f#dev':                             
+                    97.62, 'pre#f#dev': 98.44,                                  
+                    'f#f#test': 97.67, 'rec#f#test':                            
+                    96.96, 'pre#f#test': 98.4}                                  
